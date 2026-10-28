@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Karting Villafranca · 1.256 metros de pista a 20 minutos de Córdoba</title>
+<meta name="description" content="Circuito de karting al aire libre en Villafranca de Córdoba: 1.256 metros, sede del Campeonato de Andalucía. Tanda de 8 minutos desde 18 €, Gran Premio con parrilla desde 38 €. Monta tu carrera y mándala por WhatsApp.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#16181B">
+<link rel="icon" href="img/logo-villafranca-s.webp">
+<link rel="preload" href="fonts/chakra-700i.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/chakra-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/portada.webp" media="(min-width:701px)" fetchpriority="high">
+<link rel="preload" as="image" href="img/portada-m.webp" media="(max-width:700px)" fetchpriority="high">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SportsActivityLocation","name":"Karting Villafranca (Karting Córdoba)","url":"https://kartingcordoba.com/karting-villafranca/inicio.html","telephone":"+34957402350","email":"info@kartingcordoba.com","address":{"@type":"PostalAddress","streetAddress":"CO-3103, km 1","postalCode":"14420","addressLocality":"Villafranca de Córdoba","addressRegion":"Córdoba","addressCountry":"ES"},"geo":{"@type":"GeoCoordinates","latitude":37.9590607,"longitude":-4.561884},"parentOrganization":{"@type":"Organization","name":"Karting Indoor Córdoba S.L."}}</script>
+<style>
+@font-face{font-family:'Chakra Petch';src:url('fonts/chakra-400.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'Chakra Petch';src:url('fonts/chakra-600.woff2') format('woff2');font-weight:600;font-display:swap}
+@font-face{font-family:'Chakra Petch';src:url('fonts/chakra-700.woff2') format('woff2');font-weight:700;font-display:swap}
+@font-face{font-family:'Chakra Petch';src:url('fonts/chakra-700i.woff2') format('woff2');font-weight:700;font-style:italic;font-display:swap}
+:root{
+  /* SOLO su paleta medida: asfalto (el negro de su escudo), cal (las líneas), azul de su piano y de «VILLAFRANCA»,
+     y la calima de su campiña (la del render) */
+  --asfalto:#16181B; --asfalto-2:#202428; --asfalto-3:#30353A;
+  --cal:#F4F3EF; --calima:#EBE5D5; --linea:#D9D5CA; --tinta-2:#4A4E53;
+  --azul:#4FA0D2; --azul-claro:#8CC3E4; --azul-tinta:#1F5F86; --rojo:#DF2D39;
+  --gris:#A9AEB3;
+  --f:'Chakra Petch',system-ui,sans-serif;
+  --curva:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:4.5rem}
+body{margin:0;background:var(--cal);color:var(--asfalto);font-family:var(--f);font-size:1.02rem;line-height:1.6;-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums}
+main{overflow-x:clip}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-weight:700;font-style:italic;line-height:.98;letter-spacing:-.015em;margin:0}
+h3{font-style:normal;letter-spacing:0;line-height:1.15}
+p{margin:0 0 1em;max-width:60ch}
+.wrap{max-width:80rem;margin:0 auto;padding:0 clamp(1rem,4vw,2.75rem)}
+.ico{width:1.15em;height:1.15em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+
+.franja{background:var(--asfalto);color:var(--gris);font-size:.74rem;padding:.45rem 1rem;text-align:center;border-bottom:1px solid var(--asfalto-3)}
+.franja a{color:var(--cal)}
+
+/* botones rectos, caja normal */
+.btn{display:inline-flex;align-items:center;gap:.6rem;padding:.95rem 1.45rem;font:600 .98rem/1 var(--f);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .25s var(--curva),background .25s var(--curva),color .25s var(--curva)}
+.btn:hover{transform:translateY(-2px)}
+.btn-azul{background:var(--azul);color:var(--asfalto)}
+.btn-azul:hover{background:var(--azul-claro)}
+.btn-negro{background:var(--asfalto);color:var(--cal)}
+.btn-negro:hover{background:#000}
+.btn-linea{border-color:currentColor;background:none}
+.btn:focus-visible,a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--azul);outline-offset:3px}
+
+/* cabecera fija en asfalto con su logo real */
+.cab{position:sticky;top:0;z-index:40;background:var(--asfalto)}
+.cab .wrap{display:flex;align-items:center;gap:1.5rem;height:4.25rem}
+.cab .logo img{width:7.8rem}
+.cab nav{display:flex;gap:1.6rem;margin-left:auto;font-size:.9rem}
+.cab nav a{text-decoration:none;color:var(--gris)}
+.cab nav a:hover{color:var(--cal)}
+.cab .btn{padding:.7rem 1rem;font-size:.88rem}
+@media (max-width:860px){.cab nav{display:none}.cab .wrap{justify-content:space-between}}
+
+/* PORTADA · la firma: su circuito real, renderizado, bajo la calima de su campiña */
+.portada{background:var(--calima);position:relative}
+.portada .texto{padding-top:clamp(2rem,5vw,3.6rem);padding-bottom:clamp(1.6rem,3vw,2.4rem)}
+.portada h1{font-size:clamp(2.4rem,5.6vw,5.4rem);max-width:19ch}
+.portada h1 span{color:var(--azul-tinta)}
+.portada .entrada{display:flex;flex-wrap:wrap;gap:1.2rem 2.5rem;align-items:end;justify-content:space-between;margin-top:1.4rem}
+.portada .entrada p{margin:0;font-size:clamp(1.02rem,1.5vw,1.18rem);color:var(--tinta-2);max-width:46ch}
+.acciones{display:flex;flex-wrap:wrap;gap:.75rem}
+.escena{position:relative}
+@media (min-width:701px){
+  .portada .texto{position:absolute;inset:0 0 auto 0;z-index:2;padding-bottom:3.5rem;max-width:none;background:linear-gradient(var(--calima) 62%,rgb(235 229 213/0))}
+  .portada .texto>*{max-width:calc(80rem - 5.5rem);margin-left:auto;margin-right:auto}
+  .portada .entrada .acciones{margin-bottom:.2rem}
+}
+.escena img{width:100%}
+.escena .vuelta{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+.vuelta .estela{fill:none;stroke:var(--azul);stroke-width:5;stroke-linecap:round;stroke-linejoin:round;opacity:0}
+.vuelta .kart{fill:var(--azul);stroke:#fff;stroke-width:4}
+.vuelta-m{display:none}
+.marcador{position:absolute;right:clamp(1rem,4vw,2.75rem);bottom:clamp(1rem,3vw,2rem);background:var(--asfalto);color:var(--cal);padding:.75rem 1.1rem .7rem;display:grid;gap:.1rem;min-width:11.5rem}
+.marcador>span{font-size:.72rem;color:var(--gris)}
+.marcador b{font-size:2.1rem;font-weight:700;font-style:italic;line-height:1}
+.marcador b small{font-size:.5em;color:var(--azul);margin-left:.15em;font-style:normal}
+.escena .nota{position:absolute;left:clamp(1rem,4vw,2.75rem);bottom:clamp(1rem,3vw,2rem);font-size:.68rem;color:#fff;background:rgb(22 24 27/.55);padding:.3rem .55rem;max-width:22rem;margin:0}
+@media (max-width:700px){
+  .portada{background:#E8E2D2}
+  .vuelta-h{display:none}.vuelta-m{display:block}
+  .escena{margin-top:.5rem}
+  .marcador{position:static;margin:0;min-width:0;display:flex;justify-content:space-between;align-items:baseline}
+  .escena .nota{position:static;background:var(--asfalto-2);display:block;max-width:none;padding:.5rem 1rem}
+}
+
+/* piano azul y blanco: el corte entre secciones */
+.piano{height:.8rem;background:repeating-linear-gradient(90deg,var(--azul) 0 2.6rem,#fff 2.6rem 5.2rem)}
+
+/* la recta de meta (su foto) con la reseña */
+.recta{position:relative;margin:0;background:var(--asfalto)}
+.recta img{width:100%;aspect-ratio:1440/640;object-fit:cover;object-position:50% 62%}
+.recta figcaption{position:absolute;left:0;right:0;bottom:0;padding:clamp(1.2rem,4vw,3rem) 0;background:linear-gradient(transparent,rgb(22 24 27/.85) 50%);color:var(--cal)}
+.recta blockquote{margin:0;font-size:clamp(1.4rem,3.6vw,2.9rem);font-weight:700;font-style:italic;line-height:1.05;max-width:21ch}
+.recta cite{display:block;font-style:normal;font-size:.8rem;color:#d7d9dc;margin-top:.8rem}
+@media (max-width:700px){.recta img{aspect-ratio:4/3}}
+
+/* cabecera de sección: la pregunta del cliente y la respuesta corta */
+.cabeza{display:grid;gap:.9rem;margin-bottom:clamp(2rem,5vw,3.2rem)}
+.cabeza h2{font-size:clamp(2.1rem,5vw,4rem);max-width:16ch}
+.cabeza p{color:var(--tinta-2);font-size:1.08rem;margin:0}
+
+/* TARIFAS · hoja de tiempos con el neumático de su cartel */
+.tarifas{padding:clamp(3.5rem,8vw,6.5rem) 0}
+.filas{list-style:none;margin:0;padding:0;border-top:2px solid var(--asfalto)}
+.fila{display:grid;grid-template-columns:3rem 7.5rem minmax(0,1.3fr) minmax(0,1fr) auto;gap:1.6rem;align-items:center;padding:1.2rem 0;border-bottom:1px solid var(--linea)}
+.fila .p{font-weight:700;font-style:italic;font-size:1.05rem;background:var(--asfalto);color:var(--cal);text-align:center;padding:.3rem 0}
+.neum{position:relative;width:7.5rem;aspect-ratio:1;display:grid;place-items:center}
+.neum img{position:absolute;inset:0;width:100%;height:100%}
+.neum b{position:relative;font-size:1.12rem;font-weight:700;line-height:1;margin-top:-.15rem;text-align:center}
+.neum b small{display:block;font-size:.55rem;font-weight:600;color:var(--tinta-2);margin-top:.15rem}
+.fila h3{font-size:1.45rem;font-weight:700;font-style:italic}
+.fila p{margin:.35rem 0 0;font-size:.92rem;color:var(--tinta-2)}
+.minutos{display:flex;gap:3px;height:.85rem}
+.minutos span{flex:var(--m) 0 0}
+.minutos .e{background:#9DA2A7}.minutos .c{background:var(--asfalto)}.minutos .r,.minutos .t{background:var(--azul)}
+.mins-txt{font-size:.78rem;color:var(--tinta-2);margin-top:.45rem}
+.fila .elegir{background:none;border:2px solid var(--asfalto);padding:.7rem 1rem;font:600 .88rem var(--f);cursor:pointer;color:var(--asfalto);transition:background .2s var(--curva),color .2s var(--curva)}
+.fila .elegir:hover{background:var(--asfalto);color:var(--cal)}
+.leyenda{display:flex;gap:1.3rem;flex-wrap:wrap;font-size:.78rem;color:var(--tinta-2);margin-top:1.2rem}
+.leyenda i{display:inline-block;width:.75rem;height:.75rem;margin-right:.4rem;vertical-align:-.08rem}
+.tarifas .aviso{font-size:.8rem;color:var(--tinta-2);margin-top:.6rem}
+@media (max-width:900px){
+  .fila{grid-template-columns:5.6rem minmax(0,1fr);gap:.4rem 1rem;padding:1.3rem 0}
+  .fila .p{display:none}
+  .neum{width:5.6rem;grid-row:span 3}
+  .neum b{font-size:1rem}
+  .fila .elegir{justify-self:start;margin-top:.5rem}
+}
+
+/* MONTA TU CARRERA */
+.monta{padding:clamp(3.5rem,8vw,6.5rem) 0;background:#fff}
+.monta-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(1.5rem,4vw,3.5rem);align-items:start}
+@media (max-width:900px){.monta-grid{grid-template-columns:minmax(0,1fr)}}
+fieldset{border:0;margin:0 0 1.6rem;padding:0}
+legend{font-weight:700;font-size:.95rem;margin-bottom:.7rem}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem}
+.chips label{position:relative;cursor:pointer}
+.chips input{position:absolute;opacity:0;inset:0}
+.chips span{display:flex;align-items:center;gap:.5rem;padding:.65rem .9rem;border:2px solid var(--asfalto);font-size:.9rem;font-weight:600;background:#fff;transition:background .2s var(--curva)}
+.chips span i{width:.75rem;height:.75rem;border-radius:50%;background:var(--c);box-shadow:0 0 0 2px var(--asfalto)}
+.chips input:checked+span{background:var(--asfalto);color:var(--cal)}
+.chips input:focus-visible+span{outline:3px solid var(--azul);outline-offset:2px}
+.pilotos{display:flex;align-items:center}
+.pilotos button{width:3rem;height:3rem;border:2px solid var(--asfalto);background:#fff;font:700 1.3rem var(--f);cursor:pointer;color:var(--asfalto)}
+.pilotos input{width:5rem;height:3rem;border:2px solid var(--asfalto);border-left:0;border-right:0;text-align:center;font:700 1.25rem var(--f);background:#fff;color:var(--asfalto);-moz-appearance:textfield}
+.pilotos input::-webkit-inner-spin-button{-webkit-appearance:none}
+.campos{display:flex;flex-wrap:wrap;gap:1rem}
+.campo{display:grid;gap:.4rem;font-size:.88rem;font-weight:600}
+.campo input,.campo select{height:3rem;padding:0 .8rem;border:2px solid var(--asfalto);background:#fff;font:500 .95rem var(--f);color:var(--asfalto);min-width:11rem}
+.requisitos{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;font-size:.85rem;color:var(--tinta-2)}
+.requisitos li::before{content:'';display:inline-block;width:.55rem;height:.55rem;background:var(--azul);margin-right:.45rem}
+.hoja{background:var(--asfalto);color:var(--cal);padding:1.6rem 1.5rem 1.5rem;position:relative}
+@media (min-width:901px){.hoja{position:sticky;top:5.5rem}}
+.hoja .tira{height:.6rem;margin:-1.6rem -1.5rem 1.3rem;background:conic-gradient(#fff 25%,var(--asfalto) 0 50%,#fff 0 75%,var(--asfalto) 0) 0 0/.6rem .6rem}
+.hoja h3{font-size:1.15rem;margin-bottom:1rem;display:flex;justify-content:space-between;gap:1rem;font-style:italic}
+.hoja h3 span{color:var(--gris);font-weight:400;font-size:.78rem;font-style:normal}
+.hoja dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:.55rem 1rem;font-size:.92rem}
+.hoja dt{color:var(--gris)}
+.hoja dd{margin:0;text-align:right;font-weight:600}
+.hoja .total{border-top:1px dashed #5E646A;margin-top:1.1rem;padding-top:1rem;display:flex;justify-content:space-between;align-items:baseline}
+.hoja .total b{font-size:2.8rem;font-weight:700;font-style:italic;line-height:1}
+.hoja .nota{font-size:.76rem;color:var(--gris);margin:.8rem 0 1.2rem}
+.hoja .btn{width:100%;justify-content:center}
+
+/* EL CIRCUITO: su curva a sangre */
+.curva{position:relative;margin:0;color:#fff}
+.curva img{width:100%;height:min(82vh,52rem);object-fit:cover;object-position:50% 70%}
+.curva figcaption{position:absolute;inset:auto 0 0 0;padding:clamp(1.5rem,5vw,3.5rem) 0;background:linear-gradient(transparent,rgb(16 18 20/.82) 55%)}
+.curva h2{font-size:clamp(2.1rem,5.4vw,4.4rem);max-width:15ch}
+.curva p{color:#e3e5e7;margin-top:1rem;font-size:1.08rem}
+.datos{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));background:var(--cal)}
+.datos div{padding:1.6rem clamp(1rem,3vw,2rem);border-right:1px solid var(--linea)}
+.datos div:last-child{border-right:0}
+.datos b{display:block;font-size:clamp(2rem,4.6vw,3.6rem);font-weight:700;font-style:italic;line-height:1}
+.datos b small{font-size:.42em;color:var(--azul-tinta);font-style:normal;margin-left:.1em}
+.datos span{font-size:.85rem;color:var(--tinta-2)}
+.curvas{display:flex;gap:.25rem;margin-top:.55rem}
+.curvas i{width:.9rem;height:.45rem;background:var(--azul)}
+.curvas i.d{background:var(--asfalto)}
+@media (max-width:760px){.datos{grid-template-columns:repeat(2,minmax(0,1fr))}.datos div:nth-child(2){border-right:0}.datos div:nth-child(-n+2){border-bottom:1px solid var(--linea)}.curva img{height:min(70vh,30rem)}}
+.kart-fila{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:.5rem;background:var(--cal);padding:0 0 .5rem}
+.kart-fila>img{width:100%;height:100%;object-fit:cover;aspect-ratio:16/10}
+.kart-fila .kb{background:var(--asfalto);display:grid;place-items:center;position:relative;padding:1.5rem}
+.kart-fila .kb img{width:min(17rem,80%)}
+.kart-fila .kb span{position:absolute;left:1rem;bottom:.8rem;color:var(--gris);font-size:.78rem}
+@media (max-width:700px){.kart-fila{grid-template-columns:minmax(0,1fr)}}
+
+/* GRUPOS: su parrilla real */
+.grupos{background:var(--azul);color:var(--asfalto)}
+.grupos-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);align-items:stretch}
+.grupos .texto{padding:clamp(3rem,7vw,6rem) clamp(1rem,4vw,3.5rem) clamp(3rem,7vw,6rem) max(clamp(1rem,4vw,2.75rem),calc((100vw - 80rem)/2 + 2.75rem))}
+.grupos h2{font-size:clamp(2.2rem,5vw,4.2rem)}
+.grupos p{color:#0f2d42;margin-top:1.2rem;font-size:1.08rem}
+.grupos ul{list-style:none;margin:1.6rem 0 2rem;padding:0;display:grid;gap:.1rem}
+.grupos li{display:flex;justify-content:space-between;gap:1rem;padding:.7rem 0;border-bottom:2px solid rgb(22 24 27/.25);font-weight:700;font-style:italic;font-size:1.25rem}
+.grupos li span{font-weight:400;font-style:normal;font-size:.9rem;color:#0f2d42;align-self:center;text-align:right}
+.grupos .foto img{width:100%;height:100%;object-fit:cover;object-position:50% 12%;min-height:22rem}
+@media (max-width:900px){.grupos-grid{grid-template-columns:minmax(0,1fr)}.grupos .texto{padding:3rem clamp(1rem,4vw,2.75rem)}}
+
+/* CAMPEONATOS: la torre de tiempos */
+.campeonatos{padding:clamp(3.5rem,8vw,6.5rem) 0;background:var(--asfalto);color:var(--cal)}
+.campeonatos .cabeza p{color:#c9ccd0}
+.torre{list-style:none;margin:0;padding:0;border-left:4px solid var(--azul);max-width:52rem}
+.torre li{display:grid;grid-template-columns:3.4rem minmax(0,1fr) auto;gap:1.2rem;align-items:center;padding:1.1rem 1rem 1.1rem 0;border-bottom:1px solid var(--asfalto-3)}
+.torre .p{background:var(--cal);color:var(--asfalto);font-weight:700;font-style:italic;text-align:center;padding:.35rem 0}
+.torre h3{font-size:1.2rem}
+.torre p{font-size:.9rem;color:var(--gris);margin:.25rem 0 0}
+.torre .dato{font-weight:700;font-size:1.05rem;text-align:right;white-space:nowrap}
+.torre .dato small{display:block;font-weight:400;font-size:.72rem;color:var(--gris)}
+@media (max-width:600px){.torre li{grid-template-columns:2.8rem minmax(0,1fr)}.torre .dato{grid-column:2;text-align:left}}
+
+/* CIERRE: el azul de su piano con la silueta del trazado */
+.cierre{position:relative;padding:clamp(4rem,9vw,7rem) 0;background:var(--azul);color:var(--asfalto);overflow:hidden}
+.cierre .silueta{position:absolute;right:-4%;top:50%;width:min(60rem,100%);transform:translateY(-50%);opacity:.22;pointer-events:none}
+.cierre h2{font-size:clamp(2.3rem,6vw,5rem);max-width:13ch;position:relative}
+.cierre p{color:#0f2d42;margin-top:1.2rem;font-size:1.1rem;position:relative}
+.cierre .acciones{margin-top:2rem;position:relative}
+.donde{display:grid;grid-template-columns:repeat(3,minmax(0,auto));gap:1rem 3rem;margin-top:3rem;font-size:.95rem;justify-content:start;position:relative}
+.donde b{display:block;color:#0f2d42;font-weight:400;font-size:.76rem;margin-bottom:.2rem}
+.donde a{text-decoration:none;font-weight:600}
+@media (max-width:700px){.donde{grid-template-columns:minmax(0,1fr)}}
+
+.pie-web{background:var(--asfalto);color:var(--gris);font-size:.82rem;padding:2.4rem 0}
+.pie-web .wrap{display:flex;flex-wrap:wrap;gap:1.5rem 3rem;justify-content:space-between;align-items:center}
+.pie-web img{width:8.5rem}
+.casa{display:flex;flex-wrap:wrap;gap:.6rem 1.6rem}
+.casa a{text-decoration:none;color:var(--cal)}
+.casa a i{display:inline-block;width:.55rem;height:.55rem;margin-right:.45rem;background:var(--cal)}
+.casa a i.r{background:var(--rojo)}
+
+@media (prefers-reduced-motion:no-preference){@supports (animation-timeline:view()){
+  .revela{animation:sube linear both;animation-timeline:view();animation-range:entry 0% cover 24%}
+  @keyframes sube{from{opacity:0;transform:translateY(1.4rem)}to{opacity:1;transform:none}}}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9z"/><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/></symbol>
+  <symbol id="i-flag" viewBox="0 0 24 24"><path d="M4 22V4"/><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1"/></symbol>
+  <symbol id="i-tel" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+</svg>
+
+<div class="franja">Propuesta de rediseño en revisión, preparada por OpsPilot · <a href="v1/">versión 1</a> · la web oficial sigue en <a href="https://kartingcordoba.com/karting-villafranca/inicio.html">kartingcordoba.com</a></div>
+
+<header class="cab">
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="Karting Villafranca, inicio"><img src="img/logo-villafranca-s.webp" width="360" height="133" alt="Karting Villafranca Córdoba"></a>
+    <nav aria-label="Secciones"><a href="#tarifas">Tarifas</a><a href="#monta">Reservar</a><a href="#circuito">El circuito</a><a href="#grupos">Grupos</a><a href="#campeonatos">Campeonatos</a></nav>
+    <a class="btn btn-azul" href="#monta"><svg class="ico"><use href="#i-flag"/></svg>Monta tu carrera</a>
+  </div>
+</header>
+
+<main>
+<section class="portada" aria-labelledby="t-portada">
+  <div class="wrap texto">
+    <h1 id="t-portada">1.256 metros de pista, <span>a 20 minutos de Córdoba.</span></h1>
+    <div class="entrada">
+      <p>Circuito de karting al aire libre entre olivos, en Villafranca: aquí se corre el Campeonato de Andalucía. Tanda de 8 minutos por 18 €; Gran Premio con parrilla de salida desde 38 €.</p>
+      <div class="acciones">
+        <a class="btn btn-negro" href="#monta"><svg class="ico"><use href="#i-flag"/></svg>Monta tu carrera</a>
+        <a class="btn btn-linea" href="https://wa.me/34669095287"><svg class="ico"><use href="#i-wa"/></svg>669 095 287</a>
+      </div>
+    </div>
+  </div>
+  <div class="escena">
+    <picture>
+      <source media="(max-width:700px)" srcset="img/portada-m.webp" width="1080" height="1500">
+      <img src="img/portada.webp" width="2400" height="1350" fetchpriority="high" alt="Vista aérea del circuito de Karting Villafranca entre olivares: el trazado completo con sus pianos azules, los muros de neumáticos, la recta de meta con la parrilla de karts y el pórtico con el logo">
+    </picture>
+    {{VUELTA_H}}
+    {{VUELTA_M}}
+    <div class="marcador" aria-hidden="true"><span>Vuelta de reconocimiento</span><b><span id="metros">1.256</span><small>m</small></b></div>
+    <p class="nota">Su trazado real (OpenStreetMap), recreado en 3D. Ilustrativo.</p>
+  </div>
+</section>
+
+<div class="piano" aria-hidden="true"></div>
+
+<figure class="recta">
+  <picture>
+    <source media="(max-width:700px)" srcset="img/recta-m.webp">
+    <img src="img/recta.webp" width="1440" height="866" loading="lazy" alt="La recta de meta de Karting Villafranca, con la parrilla pintada, los pianos azules y el pórtico con su nombre, entre olivos">
+  </picture>
+  <figcaption><div class="wrap">
+    <blockquote>«Los karts están super bien y el circuito... pedazo pista. El trazado es super divertido.»</blockquote>
+    <cite>David García Poza · reseña en Google · hizo un Gran Premio con su hermano</cite>
+  </div></figcaption>
+</figure>
+
+<section class="tarifas" id="tarifas" aria-labelledby="t-tarifas">
+  <div class="wrap">
+    <div class="cabeza revela">
+      <h2 id="t-tarifas">¿Cuánto cuesta salir a pista?</h2>
+      <p>Desde 18 € la tanda. Precio por piloto, el de su tarifa; cada neumático lleva el color de su cartel.</p>
+    </div>
+    <ol class="filas">
+      <li class="fila revela"><span class="p" aria-hidden="true">P1</span>
+        <div class="neum"><img src="img/neum-tanda.webp" width="240" height="240" alt="" loading="lazy"><b>18 €<small>piloto</small></b></div>
+        <div><h3>Tanda</h3><p>8 minutos cronometrados. Para probar la pista.</p></div>
+        <div><div class="minutos" role="img" aria-label="8 minutos de tanda"><span class="t" style="--m:8"></span><span style="--m:22"></span></div><div class="mins-txt">8 min en pista</div></div>
+        <button class="elegir" data-formato="tanda">Montar con la tanda</button></li>
+      <li class="fila revela"><span class="p" aria-hidden="true">P2</span>
+        <div class="neum"><img src="img/neum-mini.webp" width="240" height="240" alt="" loading="lazy"><b>38 €<small>piloto</small></b></div>
+        <div><h3>Mini Gran Premio</h3><p>Clasificación, parrilla de salida y carrera.</p></div>
+        <div><div class="minutos" role="img" aria-label="8 minutos de clasificación y 8 de carrera"><span class="c" style="--m:8"></span><span class="r" style="--m:8"></span><span style="--m:14"></span></div><div class="mins-txt">8 + 8 min</div></div>
+        <button class="elegir" data-formato="mini">Montar con el Mini GP</button></li>
+      <li class="fila revela"><span class="p" aria-hidden="true">P3</span>
+        <div class="neum"><img src="img/neum-gp.webp" width="240" height="240" alt="" loading="lazy"><b>43 €<small>piloto</small></b></div>
+        <div><h3>Gran Premio</h3><p>Entrenamientos, clasificación, parrilla y carrera.</p></div>
+        <div><div class="minutos" role="img" aria-label="8 minutos de entrenamientos, 8 de clasificación y 8 de carrera"><span class="e" style="--m:8"></span><span class="c" style="--m:8"></span><span class="r" style="--m:8"></span><span style="--m:6"></span></div><div class="mins-txt">8 + 8 + 8 min</div></div>
+        <button class="elegir" data-formato="gp">Montar con el Gran Premio</button></li>
+      <li class="fila revela"><span class="p" aria-hidden="true">P4</span>
+        <div class="neum"><img src="img/neum-super.webp" width="240" height="240" alt="" loading="lazy"><b>49 €<small>piloto</small></b></div>
+        <div><h3>Súper Gran Premio</h3><p>Lo mismo, con 10 minutos en cada parte.</p></div>
+        <div><div class="minutos" role="img" aria-label="10 minutos de entrenamientos, 10 de clasificación y 10 de carrera"><span class="e" style="--m:10"></span><span class="c" style="--m:10"></span><span class="r" style="--m:10"></span></div><div class="mins-txt">10 + 10 + 10 min</div></div>
+        <button class="elegir" data-formato="super">Montar con el Súper GP</button></li>
+      <li class="fila revela"><span class="p" aria-hidden="true">P5</span>
+        <div class="neum"><img src="img/neum-pase.webp" width="240" height="240" alt="" loading="lazy"><b>57 €<small>el día</small></b></div>
+        <div><h3>Pase de pista, 1 día</h3><p>Día completo con kart privado, de 10:00 a 18:00 h.</p></div>
+        <div><div class="mins-txt">10:00 → 18:00</div></div>
+        <button class="elegir" data-formato="pase">Preguntar por el pase</button></li>
+    </ol>
+    <div class="leyenda"><span><i style="background:#9DA2A7"></i>Entrenamientos</span><span><i style="background:var(--asfalto)"></i>Clasificación</span><span><i style="background:var(--azul)"></i>Carrera o tanda</span></div>
+    <p class="aviso">El pase de pista sale de su cartel de tarifas: por confirmar. Para conducir: desde 15 años, 1,50 m de altura y hasta 120 kg.</p>
+  </div>
+</section>
+
+<div class="piano" aria-hidden="true"></div>
+
+<section class="monta" id="monta" aria-labelledby="t-monta">
+  <div class="wrap">
+    <div class="cabeza revela">
+      <h2 id="t-monta">Monta tu carrera y mándala.</h2>
+      <p>Formato, cuántos sois y qué día: te sale el total y el mensaje listo para WhatsApp. El circuito te confirma hueco y señal.</p>
+    </div>
+    <div class="monta-grid">
+      <form id="form-carrera" novalidate>
+        <fieldset>
+          <legend>Formato</legend>
+          <div class="chips">
+            <label><input type="radio" name="formato" value="tanda"><span><i style="--c:#5DBB46"></i>Tanda · 18 €</span></label>
+            <label><input type="radio" name="formato" value="mini"><span><i style="--c:#F39A1E"></i>Mini GP · 38 €</span></label>
+            <label><input type="radio" name="formato" value="gp" checked><span><i style="--c:#F2D21B"></i>Gran Premio · 43 €</span></label>
+            <label><input type="radio" name="formato" value="super"><span><i style="--c:#E2343F"></i>Súper GP · 49 €</span></label>
+            <label><input type="radio" name="formato" value="pase"><span><i style="--c:#E2549B"></i>Pase 1 día · 57 €</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend id="l-pilotos">Pilotos</legend>
+          <div class="pilotos">
+            <button type="button" data-paso="-1" aria-label="Un piloto menos">−</button>
+            <input id="pilotos" type="number" inputmode="numeric" min="1" max="40" value="8" aria-labelledby="l-pilotos">
+            <button type="button" data-paso="1" aria-label="Un piloto más">+</button>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Cuándo</legend>
+          <div class="campos">
+            <label class="campo">Día<input id="dia" type="date"></label>
+            <label class="campo">Franja<select id="franja"><option>Mañana</option><option selected>Tarde</option><option>Me da igual</option></select></label>
+            <label class="campo">Motivo<select id="motivo"><option>Entre amigos</option><option>Despedida</option><option>Empresa</option><option>Cumpleaños</option><option>Entrenar</option></select></label>
+          </div>
+        </fieldset>
+        <ul class="requisitos" aria-label="Para subir al kart"><li>Desde 15 años</li><li>1,50 m de altura</li><li>Hasta 120 kg</li><li>Casco incluido</li><li>Calzado cerrado</li></ul>
+      </form>
+      <aside class="hoja" aria-live="polite" aria-labelledby="t-hoja">
+        <div class="tira" aria-hidden="true"></div>
+        <h3 id="t-hoja">Tu carrera <span>Karting Villafranca</span></h3>
+        <dl>
+          <dt>Formato</dt><dd id="h-formato">Gran Premio</dd>
+          <dt>En pista</dt><dd id="h-min">24 min</dd>
+          <dt>Pilotos</dt><dd id="h-pilotos">8</dd>
+          <dt>Día</dt><dd id="h-dia">Por elegir</dd>
+          <dt>Motivo</dt><dd id="h-motivo">Entre amigos</dd>
+        </dl>
+        <div class="total"><span>Total orientativo</span><b id="h-total">344 €</b></div>
+        <p class="nota">Precio por piloto de su tarifa publicada. Hueco, señal y extras se confirman por WhatsApp.</p>
+        <a id="enviar" class="btn btn-azul" href="https://wa.me/34669095287"><svg class="ico"><use href="#i-wa"/></svg>Mandar al circuito</a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section id="circuito" aria-labelledby="t-circuito">
+  <figure class="curva" style="margin:0">
+    <img src="img/pianos.webp" width="1400" height="1050" loading="lazy" alt="Curva del circuito de Villafranca con los pianos azules y blancos y los muros de neumáticos rojos y blancos">
+    <figcaption><div class="wrap">
+      <h2 id="t-circuito">Doce curvas y una recta para pasar a alguien.</h2>
+      <p>Al aire libre, entre olivos. Más de 20 años abierto y sede anual del Campeonato Andaluz de Karting.</p>
+    </div></figcaption>
+  </figure>
+  <div class="datos">
+    <div><b>1.256<small>m</small></b><span>de trazado</span></div>
+    <div><b>12</b><span>curvas: 4 a izquierdas y 8 a derechas</span><div class="curvas" aria-hidden="true"><i></i><i></i><i></i><i></i><i class="d"></i><i class="d"></i><i class="d"></i><i class="d"></i><i class="d"></i><i class="d"></i><i class="d"></i><i class="d"></i></div></div>
+    <div><b>GT4</b><span>karts Sodikart</span></div>
+    <div><b>270<small>cc</small></b><span>motor Honda</span></div>
+  </div>
+  <div class="kart-fila">
+    <img src="img/curva.webp" width="1400" height="1050" loading="lazy" alt="Vista del trazado de Villafranca con la recta, los pianos y el olivar al fondo">
+    <div class="kb"><img src="img/kart.webp" width="295" height="255" loading="lazy" alt="Kart Sodikart de alquiler en rojo y blanco"><span>Sodikart GT4 · Honda 270 cc</span></div>
+  </div>
+</section>
+
+<section class="grupos" id="grupos" aria-labelledby="t-grupos">
+  <div class="grupos-grid">
+    <div class="texto revela">
+      <h2 id="t-grupos">¿Cuántos sois?</h2>
+      <p>Despedidas, empresas y cumpleaños: el circuito prepara paquetes para grupos y eventos privados. Diles cuántos sois y qué buscáis.</p>
+      <ul>
+        <li>Despedida <span>Gran Premio con parrilla</span></li>
+        <li>Empresa <span>evento privado</span></li>
+        <li>Cumpleaños <span>pilotos desde 15 años</span></li>
+      </ul>
+      <a class="btn btn-negro" href="https://wa.me/34669095287?text=Hola%2C%20somos%20un%20grupo%20y%20queremos%20correr%20en%20Villafranca."><svg class="ico"><use href="#i-wa"/></svg>Pedir paquete para grupo</a>
+    </div>
+    <div class="foto"><img src="img/parrilla.webp" width="1200" height="722" loading="lazy" alt="La parrilla de salida pintada en la recta de Karting Villafranca, con los pianos azules"></div>
+  </div>
+</section>
+
+<section class="campeonatos" id="campeonatos" aria-labelledby="t-camp">
+  <div class="wrap">
+    <div class="cabeza revela">
+      <h2 id="t-camp">Aquí se corre en serio.</h2>
+      <p>La misma pista que alquilas es la del Campeonato de Andalucía. Y en casa organizan sus propias carreras de resistencia.</p>
+    </div>
+    <ol class="torre revela">
+      <li><span class="p">P1</span><div><h3>Campeonato de Andalucía de Karting</h3><p>Villafranca acogió la prueba inaugural de 2025, con unos 50 pilotos.</p></div><span class="dato">Sede<small>cada temporada</small></span></li>
+      <li><span class="p">P2</span><div><h3>VRS Endurance Cup</h3><p>3 horas de resistencia y 40 minutos de mini resistencia, equipos de 2 a 4 pilotos, categorías Gold, Silver y Bronze.</p></div><span class="dato">299 €<small>por equipo</small></span></li>
+      <li><span class="p">P3</span><div><h3>Grupo de WhatsApp de pilotos</h3><p>Para buscar compañero o rival y enterarse de las próximas carreras.</p></div><span class="dato"><a href="https://kartingcordoba.com/unete-al-grupo-de-whatsapp-de-pilotos.html">Unirse</a><small>gratis</small></span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="cierre" aria-labelledby="t-cierre">
+  <img class="silueta" src="img/trazado.svg" alt="" width="235" height="115" loading="lazy">
+  <div class="wrap revela">
+    <h2 id="t-cierre">La parrilla está pintada. Falta tu nombre.</h2>
+    <p>Monta tu carrera en un minuto y mándala. O llama, que en el circuito te lo cuentan.</p>
+    <div class="acciones">
+      <a class="btn btn-negro" href="#monta"><svg class="ico"><use href="#i-flag"/></svg>Monta tu carrera</a>
+      <a class="btn btn-linea" href="tel:+34957402350"><svg class="ico"><use href="#i-tel"/></svg>957 40 23 50</a>
+    </div>
+    <div class="donde">
+      <div><b>Dónde</b><a href="https://maps.google.com/?cid=6000605871675198907">CO-3103, km 1 · 14420 Villafranca de Córdoba</a></div>
+      <div><b>WhatsApp</b><a href="https://wa.me/34669095287">669 095 287</a></div>
+      <div><b>Correo</b><a href="mailto:info@kartingcordoba.com">info@kartingcordoba.com</a></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="pie-web">
+  <div class="wrap">
+    <img src="img/logo-villafranca-s.webp" width="360" height="133" alt="Karting Villafranca" loading="lazy">
+    <div class="casa" aria-label="Karting Córdoba también">
+      <a href="https://kartingcordoba.com/karting-indoor/inicio.html"><i class="r"></i>Karting Indoor · Chinales</a>
+      <a href="https://kartingcordoba.com/escape-room-el-caso-vasiliev/inicio.html"><i></i>Escape room · El Caso Vasiliev</a>
+      <a href="https://kartingcordoba.com/escape-room-la-tumba-olvidad-del-faraon-nekhet/inicio.html"><i></i>Escape room · La Tumba del Faraón</a>
+    </div>
+    <span>Karting Indoor Córdoba S.L. · <a href="https://kartingcordoba.com/aviso-legal.html">Aviso legal</a> · <a href="https://kartingcordoba.com/politica-de-privacidad.html">Privacidad</a></span>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const TARIFAS = {
+    tanda: { n: 'Tanda', p: 18, min: '8 min' }, mini: { n: 'Mini Gran Premio', p: 38, min: '16 min' },
+    gp: { n: 'Gran Premio', p: 43, min: '24 min' }, super: { n: 'Súper Gran Premio', p: 49, min: '30 min' },
+    pase: { n: 'Pase de pista, 1 día', p: 57, min: '10:00 a 18:00' }
+  };
+  const $ = (s) => document.querySelector(s);
+  const form = $('#form-carrera'), pil = $('#pilotos');
+  const eur = (n) => n.toLocaleString('es-ES') + ' €';
+  const fecha = (v) => v ? new Date(v + 'T12:00').toLocaleDateString('es-ES', { weekday: 'long', day: 'numeric', month: 'long' }) : 'Por elegir';
+  function pinta() {
+    const f = TARIFAS[form.formato.value], n = Math.min(40, Math.max(1, parseInt(pil.value, 10) || 1)), total = f.p * n;
+    $('#h-formato').textContent = f.n; $('#h-min').textContent = f.min; $('#h-pilotos').textContent = n;
+    $('#h-dia').textContent = fecha($('#dia').value); $('#h-motivo').textContent = $('#motivo').value; $('#h-total').textContent = eur(total);
+    const txt = `Hola, quiero montar una carrera en Karting Villafranca:\n· ${f.n} (${f.p} € por piloto)\n· ${n} pilotos\n· Día: ${fecha($('#dia').value)} · ${$('#franja').value}\n· Motivo: ${$('#motivo').value}\nTotal orientativo: ${eur(total)}. ¿Hay hueco?`;
+    $('#enviar').href = 'https://wa.me/34669095287?text=' + encodeURIComponent(txt);
+  }
+  form.addEventListener('input', pinta);
+  document.querySelectorAll('[data-paso]').forEach((b) => b.addEventListener('click', () => { pil.value = Math.min(40, Math.max(1, (parseInt(pil.value, 10) || 1) + +b.dataset.paso)); pinta(); }));
+  document.querySelectorAll('.elegir').forEach((b) => b.addEventListener('click', () => {
+    form.querySelector(`input[value="${b.dataset.formato}"]`).checked = true; pinta();
+    $('#monta').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+  }));
+  $('#dia').min = new Date().toISOString().slice(0, 10);
+  pinta();
+
+  // la vuelta de reconocimiento: el kart recorre la línea central PROYECTADA con la cámara del render
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const svg = [...document.querySelectorAll('.vuelta')].find((s) => s.getBoundingClientRect().width > 0);
+  if (!svg) return;
+  const linea = svg.querySelector('.estela'), kart = svg.querySelector('.kart'), metros = $('#metros');
+  const L = linea.getTotalLength(), DUR = 8000, TOTAL = 1256;
+  const suave = (t) => t < .5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+  linea.style.strokeDasharray = L; linea.style.strokeDashoffset = L; linea.style.opacity = .85;
+  let t0;
+  const paso = (ts) => {
+    t0 ??= ts;
+    const t = Math.min(1, (ts - t0) / DUR), p = suave(t), q = linea.getPointAtLength(p * L);
+    kart.setAttribute('cx', q.x.toFixed(1)); kart.setAttribute('cy', q.y.toFixed(1));
+    linea.style.strokeDashoffset = (L * (1 - p)).toFixed(1);
+    metros.textContent = Math.round(p * TOTAL).toLocaleString('es-ES');
+    if (t < 1) requestAnimationFrame(paso);
+    else linea.animate([{ opacity: .85 }, { opacity: 0 }], { duration: 1200, fill: 'forwards', easing: 'ease-out' });
+  };
+  const arranca = () => { metros.textContent = '0'; requestAnimationFrame(paso); };
+  ('requestIdleCallback' in window) ? requestIdleCallback(arranca, { timeout: 1500 }) : setTimeout(arranca, 500);
+})();
+</script>
+</body>
+</html>

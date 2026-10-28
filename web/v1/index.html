@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Karting Villafranca · 1.256 metros de pista a 20 minutos de Córdoba</title>
+<meta name="description" content="Circuito de karting al aire libre en Villafranca de Córdoba: 1.256 metros, sede del Campeonato de Andalucía. Tanda de 8 minutos desde 18 €, Gran Premio con parrilla desde 38 €. Reserva tu carrera por WhatsApp.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#16181B">
+<link rel="icon" href="img/logo-villafranca-s.webp">
+<link rel="preload" href="fonts/unbounded-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SportsActivityLocation","name":"Karting Villafranca (Karting Córdoba)","url":"https://kartingcordoba.com/karting-villafranca/inicio.html","telephone":"+34957402350","email":"info@kartingcordoba.com","address":{"@type":"PostalAddress","streetAddress":"CO-3103, km 1","postalCode":"14420","addressLocality":"Villafranca de Córdoba","addressRegion":"Córdoba","addressCountry":"ES"},"geo":{"@type":"GeoCoordinates","latitude":37.9590607,"longitude":-4.561884},"parentOrganization":{"@type":"Organization","name":"Karting Indoor Córdoba S.L."}}</script>
+<style>
+@font-face{font-family:'Unbounded';src:url('fonts/unbounded-var-latin.woff2') format('woff2');font-weight:200 900;font-display:swap}
+:root{
+  /* SOLO su paleta medida: asfalto (el negro de su escudo), cal (las líneas de la pista), azul de su piano y de «VILLAFRANCA» */
+  --asfalto:#16181B; --asfalto-2:#202428; --asfalto-3:#2C3136; --cal:#F4F3EF; --cal-2:#E6E5DF;
+  --azul:#4FA0D2; --azul-claro:#8CC3E4; --rojo:#DF2D39;
+  --gris:#A9AEB3; --gris-claro:#5E646A;
+  /* el código de colores de SU cartel de tarifas (un neumático por tarifa) */
+  --n-tanda:#5DBB46; --n-mini:#F39A1E; --n-gp:#F2D21B; --n-super:#E2343F; --n-pase:#E2549B;
+  --f:'Unbounded',system-ui,sans-serif;
+  --curva:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:4.5rem}
+body{margin:0;background:var(--asfalto);color:var(--cal);font-family:var(--f);font-weight:350;font-size:.97rem;line-height:1.62;-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums}
+main{overflow-x:clip}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-weight:800;line-height:1.04;letter-spacing:-.025em;margin:0}
+p{margin:0 0 1em;max-width:62ch}
+.wrap{max-width:78rem;margin:0 auto;padding:0 clamp(1rem,4vw,2.5rem)}
+.ico{width:1.15em;height:1.15em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* franja de propuesta */
+.franja{background:var(--cal);color:var(--asfalto);font-size:.72rem;padding:.45rem 1rem;text-align:center}
+.franja a{font-weight:600}
+
+/* botones rectos, caja normal */
+.btn{display:inline-flex;align-items:center;gap:.55rem;padding:.95rem 1.4rem;font:600 .9rem/1 var(--f);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .25s var(--curva),background .25s var(--curva)}
+.btn:hover{transform:translateY(-2px)}
+.btn-azul{background:var(--azul);color:var(--asfalto)}
+.btn-azul:hover{background:var(--azul-claro)}
+.btn-linea{border-color:currentColor;color:var(--cal);background:none}
+.btn:focus-visible,a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--azul-claro);outline-offset:3px}
+
+/* cabecera fija en asfalto con su logo real */
+.cab{position:sticky;top:0;z-index:40;background:rgb(22 24 27/.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--asfalto-3)}
+.cab .wrap{display:flex;align-items:center;gap:1.5rem;height:4.25rem}
+.cab .logo img{width:7.6rem}
+.cab nav{display:flex;gap:1.4rem;margin-left:auto;font-size:.78rem}
+.cab nav a{text-decoration:none;color:var(--gris)}
+.cab nav a:hover{color:var(--cal)}
+.cab .btn{padding:.7rem 1rem;font-size:.8rem}
+@media (max-width:860px){.cab nav{display:none}.cab .wrap{justify-content:space-between}.cab .btn .t-larga{display:none}}
+
+/* PORTADA · la firma: su trazado real con el pórtico */
+.portada{position:relative;padding:clamp(2.2rem,5vw,4rem) 0 clamp(2rem,4vw,3rem);background:
+  radial-gradient(120% 80% at 70% 60%,#1d2024 0,var(--asfalto) 70%)}
+.portada .wrap{display:grid;grid-template-columns:minmax(0,1fr);gap:1.6rem}
+.portada h1{font-size:clamp(2.2rem,6.4vw,5.6rem);max-width:15ch}
+.portada h1 .az{color:var(--azul)}
+.portada .entrada{display:flex;flex-wrap:wrap;gap:1.4rem 2.5rem;align-items:end;justify-content:space-between}
+.portada .entrada p{font-size:clamp(.95rem,1.4vw,1.08rem);color:var(--cal-2);margin:0;max-width:44ch}
+.acciones{display:flex;flex-wrap:wrap;gap:.75rem}
+.lienzo{position:relative;margin-top:.4rem}
+.pista{display:block;width:100%;height:auto;fill:none;stroke-linejoin:round;stroke-linecap:round;overflow:visible}
+.pista .borde{stroke:var(--cal);stroke-width:8.6}
+.pista .asfalto{stroke:var(--asfalto-3);stroke-width:7}
+.pista .pb path{stroke:#fff;stroke-width:1.9}
+.pista .pa path{stroke:var(--azul);stroke-width:1.9;stroke-dasharray:2.2 2.2}
+.pista .barrera{stroke:#fff;stroke-width:1.7;stroke-dasharray:1.5 1.5}
+.pista .parrilla{stroke:#fff;stroke-width:.4}
+.pista .meta rect{fill:#fff;stroke:none}
+.pista .kart circle{fill:var(--azul)}
+.pista .kart .aura{fill:none;stroke:var(--azul);stroke-width:.7;opacity:.55}
+.pista .portico rect{fill:var(--asfalto);stroke:var(--cal);stroke-width:.5}
+.pista-v{display:none}
+@media (max-width:700px){.portada .pista-h{display:none}.portada .pista-v{display:block;width:min(100%,25rem);margin:0 auto}}
+.marcador{display:flex;gap:1.2rem;align-items:baseline;justify-content:flex-end;font-size:.72rem;color:var(--gris);margin-bottom:.6rem}
+.marcador b{font-size:clamp(1.6rem,3.6vw,2.8rem);color:var(--cal);font-weight:700;letter-spacing:-.02em}
+.marcador b small{font-size:.45em;color:var(--azul);margin-left:.2em}
+.lienzo .pie{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-size:.68rem;color:var(--gris-claro);margin-top:.8rem}
+@media (max-width:700px){.marcador{justify-content:flex-start}}
+
+/* piano azul y blanco: el corte entre secciones */
+.piano{height:.85rem;background:repeating-linear-gradient(90deg,var(--azul) 0 2.6rem,#fff 2.6rem 5.2rem)}
+.piano.fino{height:.45rem}
+
+/* banda de la recta de meta (su foto) con la reseña */
+.recta{position:relative;background:var(--asfalto)}
+.recta img{width:100%;aspect-ratio:1440/700;object-fit:cover;object-position:50% 60%}
+.recta figcaption{position:absolute;left:0;right:0;bottom:0;padding:clamp(1.2rem,4vw,3rem) 0;background:linear-gradient(transparent,rgb(22 24 27/.88) 45%)}
+.recta blockquote{margin:0;font-size:clamp(1.25rem,3.4vw,2.6rem);font-weight:700;line-height:1.12;max-width:22ch;letter-spacing:-.02em}
+.recta cite{display:block;font-style:normal;font-size:.75rem;color:var(--cal-2);margin-top:.8rem;font-weight:400}
+@media (max-width:700px){.recta img{aspect-ratio:4/3}}
+
+/* LA PARRILLA: las tarifas como cajones pintados en el asfalto */
+.parrilla-sec{padding:clamp(3.5rem,8vw,6.5rem) 0;background:var(--asfalto-2) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2' seed='4'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .05 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23g)'/%3E%3C/svg%3E")}
+.cabeza{display:grid;gap:1rem;margin-bottom:clamp(2rem,5vw,3.5rem)}
+.cabeza h2{font-size:clamp(1.9rem,4.6vw,3.6rem);max-width:17ch}
+.cabeza p{color:var(--cal-2)}
+.parrilla{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(1rem,4vw,3.5rem);row-gap:2.2rem}
+.cajon{position:relative;padding:1.4rem 1.4rem 1.5rem 1.4rem;border-left:3px solid #fff;border-top:3px solid #fff;display:grid;grid-template-columns:auto minmax(0,1fr);gap:.4rem 1.2rem;align-items:start}
+.cajon:nth-child(even){transform:translateY(4.2rem)}
+.cajon .pos{position:absolute;right:.8rem;top:.4rem;font-size:clamp(2.6rem,6vw,4.4rem);font-weight:900;color:rgb(255 255 255/.09);line-height:1}
+.neum{--c:var(--n-tanda);grid-row:span 3;width:6.4rem;aspect-ratio:1;border-radius:50%;display:grid;place-content:center;text-align:center;
+  background:radial-gradient(circle,var(--asfalto) 0 61%,var(--c) 61% 68%,#26292d 68% 100%);
+  box-shadow:inset 0 0 0 3px #0d0e10;font-weight:800;font-size:1.02rem;line-height:1;letter-spacing:-.04em}
+.neum small{display:block;font-size:.46rem;font-weight:500;color:var(--gris);margin-top:.25rem;letter-spacing:0}
+.cajon h3{font-size:1.25rem;margin-top:.2rem}
+.cajon p{font-size:.8rem;color:var(--cal-2);margin:0}
+.minutos{display:flex;gap:3px;margin-top:.6rem;height:.75rem;max-width:100%}
+.minutos span{height:100%;flex:var(--m) 0 0}
+.minutos .e{background:var(--gris-claro)} .minutos .c{background:var(--cal)} .minutos .r{background:var(--azul)} .minutos .t{background:var(--azul)}
+.leyenda{font-size:.64rem;color:var(--gris);margin-top:.35rem;display:flex;gap:.9rem;flex-wrap:wrap}
+.leyenda i{display:inline-block;width:.6rem;height:.6rem;margin-right:.3rem;vertical-align:-.05rem}
+.cajon .elegir{grid-column:2;justify-self:start;margin-top:.7rem;background:none;border:0;padding:0;color:var(--azul);font:600 .78rem var(--f);cursor:pointer;text-decoration:underline;text-underline-offset:.25em}
+.parrilla-nota{margin-top:6rem;font-size:.72rem;color:var(--gris);max-width:70ch}
+@media (max-width:760px){.parrilla{grid-template-columns:minmax(0,1fr)}.cajon:nth-child(even){transform:none;margin-left:1.6rem}.parrilla-nota{margin-top:2.5rem}.neum{width:5.6rem;font-size:.92rem}}
+
+/* MONTA TU CARRERA: la herramienta */
+.monta{padding:clamp(3.5rem,8vw,6.5rem) 0;background:var(--cal);color:var(--asfalto)}
+.monta .cabeza p{color:#3d4146}
+.monta-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(1.5rem,4vw,3.5rem);align-items:start}
+@media (max-width:900px){.monta-grid{grid-template-columns:minmax(0,1fr)}}
+fieldset{border:0;margin:0 0 1.6rem;padding:0}
+legend{font-weight:700;font-size:.85rem;margin-bottom:.7rem}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem}
+.chips label{position:relative;cursor:pointer}
+.chips input{position:absolute;opacity:0;inset:0}
+.chips span{display:flex;align-items:center;gap:.5rem;padding:.65rem .9rem;border:2px solid var(--asfalto);font-size:.78rem;font-weight:600;background:#fff;transition:background .2s var(--curva)}
+.chips span i{width:.7rem;height:.7rem;border-radius:50%;background:var(--c);box-shadow:0 0 0 2px var(--asfalto)}
+.chips input:checked+span{background:var(--asfalto);color:var(--cal)}
+.chips input:focus-visible+span{outline:3px solid var(--azul);outline-offset:2px}
+.pilotos{display:flex;align-items:center;gap:0}
+.pilotos button{width:3rem;height:3rem;border:2px solid var(--asfalto);background:#fff;font:700 1.2rem var(--f);cursor:pointer;color:var(--asfalto)}
+.pilotos input{width:5rem;height:3rem;border:2px solid var(--asfalto);border-left:0;border-right:0;text-align:center;font:700 1.15rem var(--f);background:#fff;color:var(--asfalto);-moz-appearance:textfield}
+.pilotos input::-webkit-inner-spin-button{-webkit-appearance:none}
+.fila{display:flex;flex-wrap:wrap;gap:1rem}
+.campo{display:grid;gap:.4rem;font-size:.78rem;font-weight:600}
+.campo input,.campo select{height:3rem;padding:0 .8rem;border:2px solid var(--asfalto);background:#fff;font:500 .85rem var(--f);color:var(--asfalto);min-width:11rem}
+.requisitos{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;font-size:.75rem;color:#3d4146}
+.requisitos li::before{content:'';display:inline-block;width:.55rem;height:.55rem;background:var(--azul);margin-right:.45rem}
+/* la hoja de inscripción: como la hoja de tiempos que te dan al bajar del kart */
+.hoja{background:var(--asfalto);color:var(--cal);padding:1.6rem 1.5rem 1.5rem}
+@media (min-width:901px){.hoja{position:sticky;top:5.5rem}}
+.hoja .tira{height:.55rem;margin:-1.6rem -1.5rem 1.3rem;background:repeating-linear-gradient(90deg,#fff 0 .55rem,var(--asfalto) .55rem 1.1rem),repeating-linear-gradient(90deg,var(--asfalto) 0 .55rem,#fff .55rem 1.1rem);background-size:100% 50%;background-repeat:no-repeat;background-position:top,bottom}
+.hoja h3{font-size:1rem;margin-bottom:1rem;display:flex;justify-content:space-between;gap:1rem}
+.hoja h3 span{color:var(--gris);font-weight:400;font-size:.7rem}
+.hoja dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:.55rem 1rem;font-size:.8rem}
+.hoja dt{color:var(--gris)}
+.hoja dd{margin:0;text-align:right;font-weight:600}
+.hoja .total{border-top:1px dashed var(--gris-claro);margin-top:1.1rem;padding-top:1rem;display:flex;justify-content:space-between;align-items:baseline}
+.hoja .total b{font-size:2.4rem;font-weight:800;letter-spacing:-.03em}
+.hoja .nota{font-size:.66rem;color:var(--gris);margin:.8rem 0 1.2rem}
+.hoja .btn{width:100%;justify-content:center}
+
+/* EL CIRCUITO: ficha de boxes */
+.circuito{padding:clamp(3.5rem,8vw,6.5rem) 0;background:var(--asfalto)}
+.circuito-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(1.5rem,4vw,3.5rem);align-items:center}
+@media (max-width:900px){.circuito-grid{grid-template-columns:minmax(0,1fr)}}
+.datos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--asfalto-3)}
+.datos div{padding:1.1rem 0;border-bottom:1px solid var(--asfalto-3)}
+.datos div:nth-child(odd){padding-right:1rem;border-right:1px solid var(--asfalto-3)}
+.datos div:nth-child(even){padding-left:1.2rem}
+.datos b{display:block;font-size:clamp(1.6rem,3.6vw,2.5rem);font-weight:800;letter-spacing:-.03em;line-height:1.05}
+.datos b small{font-size:.45em;color:var(--azul)}
+.datos span{font-size:.72rem;color:var(--gris)}
+.curvas{display:flex;gap:.25rem;margin-top:.45rem}
+.curvas i{width:.85rem;height:.45rem;background:var(--azul)}
+.curvas i.d{background:#fff}
+.fotos{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:.5rem}
+.fotos img{width:100%;height:100%;object-fit:cover}
+.fotos .f1{grid-column:span 6;aspect-ratio:16/9}
+.fotos .f2{grid-column:span 4;aspect-ratio:4/3}
+.fotos .kartbox{grid-column:span 2;background:var(--asfalto-2);display:grid;place-items:center;padding:.8rem;position:relative}
+.fotos .kartbox span{position:absolute;bottom:.5rem;left:.6rem;font-size:.6rem;color:var(--gris)}
+
+/* GRUPOS: la pizarra de boxes que se le enseña al piloto */
+.grupos{padding:clamp(3.5rem,8vw,6.5rem) 0;background:var(--azul);color:var(--asfalto)}
+.grupos-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(1.5rem,5vw,4rem);align-items:center}
+@media (max-width:900px){.grupos-grid{grid-template-columns:minmax(0,1fr)}.pizarra{margin-top:3.4rem}}
+.grupos h2{font-size:clamp(1.9rem,4.6vw,3.6rem)}
+.grupos p{color:#10263a}
+.pizarra{background:var(--asfalto);color:var(--cal);padding:1.2rem;transform:rotate(-2.5deg);box-shadow:0 1.4rem 2.6rem -1rem rgb(0 0 0/.45);position:relative;max-width:30rem;justify-self:center;width:100%}
+.pizarra::before{content:'';position:absolute;left:50%;top:-2.6rem;width:.7rem;height:2.6rem;background:#9aa0a6;transform:translateX(-50%)}
+.pizarra ol{list-style:none;margin:0;padding:0;display:grid;gap:.5rem}
+.pizarra li{display:flex;justify-content:space-between;gap:1rem;background:#fff;color:var(--asfalto);padding:.55rem .8rem;font-weight:800;font-size:clamp(1rem,2.6vw,1.45rem);letter-spacing:-.01em;line-height:1.1}
+.pizarra li span{color:#3d4146;font-weight:600;font-size:.6em;align-self:center;text-align:right}
+.pizarra li.az{background:var(--azul)}
+
+/* CAMPEONATOS: la torre de tiempos */
+.campeonatos{padding:clamp(3.5rem,8vw,6.5rem) 0;background:var(--asfalto-2)}
+.torre{list-style:none;margin:0;padding:0;border-left:4px solid var(--azul);max-width:46rem}
+.torre li{display:grid;grid-template-columns:3.2rem minmax(0,1fr) auto;gap:1rem;align-items:center;padding:1rem 1rem 1rem 0;border-bottom:1px solid var(--asfalto-3)}
+.torre .p{background:var(--cal);color:var(--asfalto);font-weight:800;text-align:center;padding:.35rem 0;font-size:.85rem}
+.torre h3{font-size:1.02rem;font-weight:700;letter-spacing:-.01em}
+.torre p{font-size:.78rem;color:var(--gris);margin:.25rem 0 0}
+.torre .dato{font-weight:700;font-size:.9rem;text-align:right;white-space:nowrap}
+.torre .dato small{display:block;font-weight:400;font-size:.62rem;color:var(--gris)}
+@media (max-width:600px){.torre li{grid-template-columns:2.6rem minmax(0,1fr)}.torre .dato{grid-column:2;text-align:left}}
+
+/* CIERRE: su azul con la silueta del trazado */
+.cierre{position:relative;padding:clamp(4rem,9vw,7rem) 0;background:var(--asfalto);overflow:hidden}
+.cierre .silueta{position:absolute;right:-6%;top:50%;width:min(64rem,105%);transform:translateY(-50%);opacity:.07;pointer-events:none}
+.cierre h2{font-size:clamp(2rem,5.4vw,4.4rem);max-width:14ch}
+.cierre h2 .az{color:var(--azul)}
+.cierre p{color:var(--cal-2);margin-top:1.2rem}
+.cierre .acciones{margin-top:2rem}
+.donde{display:grid;grid-template-columns:repeat(3,minmax(0,auto));gap:1rem 3rem;margin-top:3rem;font-size:.8rem;color:var(--cal-2);justify-content:start}
+.donde b{display:block;color:var(--gris);font-weight:500;font-size:.66rem;margin-bottom:.2rem}
+.donde a{text-decoration:none}
+@media (max-width:700px){.donde{grid-template-columns:minmax(0,1fr)}}
+
+/* PIE */
+.pie-web{background:#0f1012;color:var(--gris);font-size:.72rem;padding:2.4rem 0}
+.pie-web .wrap{display:flex;flex-wrap:wrap;gap:1.5rem 3rem;justify-content:space-between;align-items:center}
+.pie-web img{width:8rem}
+.casa{display:flex;flex-wrap:wrap;gap:.6rem 1.6rem}
+.casa a{text-decoration:none;color:var(--cal-2)}
+.casa a .pt{display:inline-block;width:.55rem;height:.55rem;margin-right:.4rem;background:var(--rojo)}
+.casa a .pt.az{background:var(--azul)}
+.casa a .pt.cl{background:var(--cal)}
+
+/* entradas suaves, sin JS */
+@media (prefers-reduced-motion:no-preference){@supports (animation-timeline:view()){
+  .revela{animation:sube linear both;animation-timeline:view();animation-range:entry 0% cover 24%}
+  @keyframes sube{from{opacity:0;transform:translateY(1.4rem)}to{opacity:1;transform:none}}}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9z"/><path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"/></symbol>
+  <symbol id="i-flag" viewBox="0 0 24 24"><path d="M4 22V4"/><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1"/></symbol>
+  <symbol id="i-tel" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+</svg>
+
+<div class="franja">Versión 1 (archivada) · <a href="../">ver la versión actual</a> · propuesta de OpsPilot · la web oficial sigue en <a href="https://kartingcordoba.com/karting-villafranca/inicio.html">kartingcordoba.com</a></div>
+
+<header class="cab">
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="Karting Villafranca, inicio"><img src="img/logo-villafranca-s.webp" width="360" height="133" alt="Karting Villafranca Córdoba"></a>
+    <nav aria-label="Secciones">
+      <a href="#parrilla">Tarifas</a><a href="#monta">Reservar</a><a href="#circuito">El circuito</a><a href="#grupos">Grupos</a><a href="#campeonatos">Campeonatos</a>
+    </nav>
+    <a class="btn btn-azul" href="#monta"><svg class="ico"><use href="#i-flag"/></svg><span>Monta tu carrera</span></a>
+  </div>
+</header>
+
+<main>
+<section class="portada" aria-labelledby="t-portada">
+  <div class="wrap">
+    <h1 id="t-portada">1.256 metros de pista, <span class="az">a 20 minutos de Córdoba.</span></h1>
+    <div class="entrada">
+      <p>Circuito de karting al aire libre en Villafranca, donde se corre el Campeonato de Andalucía. Tanda de 8 minutos por 18 €; Gran Premio con parrilla de salida desde 38 €.</p>
+      <div class="acciones">
+        <a class="btn btn-azul" href="#monta"><svg class="ico"><use href="#i-flag"/></svg>Monta tu carrera</a>
+        <a class="btn btn-linea" href="https://wa.me/34669095287"><svg class="ico"><use href="#i-wa"/></svg>669 095 287</a>
+      </div>
+    </div>
+    <div class="lienzo">
+      <div class="marcador" aria-live="off"><span>Vuelta de reconocimiento</span><b><span id="metros">1.256</span><small>m</small></b></div>
+      <svg class="pista pista-h" viewBox="0 0 235.2 114.6" role="img" aria-label="Trazado del circuito de Karting Villafranca: la recta de meta con su parrilla, los pianos azules de las curvas y el pórtico con el logo">
+<defs><path id="lh" d="M9.1 74.7 9.1 72.5 9.1 70.3 9.1 68.1 9.1 65.9 9 63.7 9 61.5 9 59.3 9 57.1 9 54.9 9 52.7 9 50.5 9 48.3 9 46.1 9 43.9 9 41.7 9 39.5 9 37.3 9.1 35.1 9.2 33.0 9.4 30.8 9.7 28.7 10.2 26.6 10.8 24.5 11.6 22.6 12.6 20.7 13.8 19.1 15.1 17.5 16.7 16.2 18.4 15.2 20.2 14.4 22.1 13.9 24.1 13.7 26.1 13.8 28.2 14.1 30.2 14.6 32.2 15.3 34.2 16.1 36.2 17.0 38.2 17.8 40.2 18.6 42.3 19.3 44.3 19.9 46.4 20.2 48.6 20.4 50.7 20.4 52.8 20.2 54.9 19.8 56.9 19.2 58.9 18.5 60.9 17.6 62.8 16.6 64.7 15.5 66.6 14.4 68.4 13.2 70.3 12.1 72.2 11.2 74.1 10.3 76.1 9.7 78.1 9.2 80.2 9.0 82.2 9.0 84.3 9.3 86.3 9.8 88.3 10.5 90.3 11.3 92.2 12.3 94 13.5 95.7 14.8 97.3 16.2 98.7 17.8 100 19.5 101.2 21.3 102.2 23.1 103 25.1 103.7 27.1 104.2 29.2 104.6 31.3 104.9 33.5 105.1 35.6 105.2 37.8 105.3 40.0 105.3 42.2 105.4 44.4 105.4 46.6 105.4 48.8 105.4 51.0 105.4 53.2 105.4 55.4 105.4 57.6 105.4 59.8 105.4 62.0 105.5 64.2 105.5 66.4 105.5 68.6 105.5 70.8 105.5 73.0 105.5 75.2 105.4 77.4 105.3 79.6 105 81.7 104.6 83.8 104 85.7 103.2 87.5 102.2 89.2 100.9 90.6 99.5 91.8 97.8 92.8 95.9 93.5 93.9 94.0 91.8 94.4 89.7 94.6 87.5 94.7 85.3 94.8 83.1 94.8 80.9 94.9 78.7 94.9 76.5 95.0 74.3 95.0 72.1 95.1 69.9 95.1 67.7 95.1 65.5 95.0 63.4 94.9 61.3 94.6 59.3 94.1 57.4 93.4 55.6 92.5 54 91.4 52.6 90.0 51.4 88.4 50.6 86.7 50.1 84.9 50 83.0 50.2 81.1 50.8 79.3 51.6 77.5 52.8 75.8 54.1 74.2 55.6 72.7 57.3 71.3 59 70.0 60.8 68.7 62.6 67.4 64.4 66.2 66.2 64.9 68 63.7 69.8 62.5 71.6 61.2 73.4 60.0 75.1 58.6 76.7 57.3 78.2 55.8 79.4 54.2 80.4 52.5 81.1 50.7 81.4 48.9 81.4 47.0 81 45.2 80.3 43.6 79.2 42.1 77.8 40.9 76.2 40.0 74.5 39.5 72.5 39.2 70.5 39.2 68.5 39.4 66.4 39.7 64.3 40.2 62.1 40.8 60 41.4 57.9 42.0 55.8 42.6 53.7 43.2 51.6 43.8 49.4 44.4 47.3 45.0 45.2 45.6 43.1 46.3 41.1 47.0 39.1 47.8 37.3 48.8 35.6 49.8 34 51.1 32.7 52.6 31.5 54.2 30.6 56.0 29.9 58.0 29.4 60.0 29 62.1 28.8 64.3 28.7 66.4 28.6 68.6 28.6 70.8 28.6 73.0 28.6 75.2 28.6 77.4 28.6 79.6 28.6 81.8 28.6 84.0 28.6 86.2 28.6 88.4 28.6 90.6 28.6 92.8 28.6 95.0 28.6 97.2 28.6 99.4 28.6 101.6 28.6 103.8 28.6 106.0 28.6 108.2 28.6 110.4 28.6 112.6 28.6 114.8 28.6 117.0 28.6 119.2 28.6 121.4 28.6 123.6 28.6 125.8 28.6 128.0 28.6 130.2 28.6 132.4 28.6 134.6 28.6 136.8 28.6 139.0 28.6 141.2 28.7 143.4 28.9 145.5 29.3 147.6 29.8 149.6 30.5 151.4 31.5 153.1 32.7 154.5 34.2 155.7 35.8 156.5 37.6 157.0 39.4 157.1 41.3 156.8 43.1 156.2 44.9 155.2 46.5 154.1 48 152.6 49.4 151.1 50.7 149.4 51.9 147.6 53.1 145.7 54.2 143.8 55.3 141.9 56.4 140.0 57.4 138.1 58.5 136.1 59.6 134.2 60.6 132.3 61.7 130.4 62.8 128.5 63.9 126.6 65.1 124.7 66.3 123.0 67.6 121.3 69 119.8 70.6 118.5 72.3 117.4 74.1 116.5 76 115.8 78.1 115.4 80.2 115.1 82.3 114.9 84.5 114.8 86.7 114.8 88.9 114.8 91.1 114.9 93.2 115.1 95.3 115.5 97.2 116.0 99.1 116.7 100.7 117.6 102.1 118.8 103.3 120.1 104.1 121.6 104.7 123.4 105 125.2 105 127.1 104.7 129.0 104.1 130.9 103.3 132.7 102.2 134.4 100.9 135.9 99.4 137.3 97.7 138.4 95.8 139.5 93.9 140.4 91.9 141.2 89.8 142.0 87.8 142.7 85.8 143.6 83.9 144.5 82.1 145.6 80.3 146.8 78.7 148.1 77.2 149.6 75.8 151.2 74.5 152.9 73.3 154.7 72.2 156.6 71.1 158.5 70 160.4 69 162.3 67.8 164.2 66.7 166.0 65.4 167.7 64 169.4 62.5 170.9 60.9 172.3 59.2 173.5 57.4 174.7 55.5 175.7 53.5 176.7 51.5 177.5 49.5 178.4 47.6 179.3 45.7 180.2 44 181.3 42.4 182.5 41.2 184.0 40.2 185.5 39.6 187.2 39.4 189.0 39.6 190.8 40.1 192.6 41 194.3 42.2 195.8 43.6 197.1 45.3 198.2 47.1 199.0 49.1 199.6 51.1 200.0 53.2 200.2 55.3 200.2 57.5 200.0 59.6 199.6 61.6 199.0 63.6 198.3 65.6 197.5 67.6 196.5 69.4 195.4 71.3 194.3 73.1 193.0 74.8 191.7 76.5 190.3 78.1 188.9 79.6 187.3 81 185.7 82.3 184.0 83.5 182.2 84.6 180.3 85.6 178.4 86.5 176.4 87.4 174.4 88.3 172.4 89.3 170.5 90.3 168.7 91.5 167.1 92.8 165.7 94.3 164.7 95.8 164.0 97.4 163.8 99 164.0 100.4 164.7 101.7 165.7 102.8 167.1 103.7 168.7 104.3 170.6 104.7 172.6 105 174.7 105.2 176.9 105.2 179.1 105.3 181.3 105.3 183.5 105.3 185.7 105.4 187.9 105.4 190.1 105.4 192.3 105.4 194.5 105.5 196.7 105.5 198.9 105.5 201.1 105.5 203.3 105.5 205.5 105.6 207.7 105.6 209.9 105.6 212.1 105.5 214.2 105.4 216.4 105.1 218.4 104.7 220.4 104 222.2 103 223.7 101.9 224.9 100.5 225.8 98.9 226.2 97.2 226.2 95.5 225.9 93.8 225.2 92.1 224.3 90.3 223.2 88.6 222.0 86.9 220.8 85.1 219.9 83.2 219.1 81.3 218.5 79.3 218.2 77.2 218.1 75.2 218.3 73.1 218.7 71 219.3 69 219.8 66.9 220.4 64.8 220.9 62.7 221.3 60.6 221.5 58.5 221.5 56.4 221.4 54.3 221.0 52.2 220.6 50 220.1 47.9 219.7 45.8 219.2 43.7 218.8 41.5 218.6 39.4 218.4 37.2 218.4 35 218.4 32.8 218.6 30.7 218.8 28.5 219.0 26.3 219.2 24.1 219.4 22 219.5 19.9 219.5 18 219.2 16.2 218.7 14.6 217.9 13.3 216.8 12.3 215.4 11.7 213.8 11.3 212.0 11.2 210.0 11.4 208.0 11.7 205.8 12.1 203.7 12.4 201.6 12.7 199.4 12.9 197.3 12.9 195.1 12.8 193.0 12.6 190.9 12.2 188.7 11.8 186.6 11.3 184.5 10.9 182.3 10.4 180.2 10.1 178.0 9.8 175.9 9.6 173.7 9.4 171.5 9.4 169.3 9.3 167.1 9.3 164.9 9.3 162.7 9.3 160.5 9.3 158.3 9.3 156.1 9.3 153.9 9.2 151.7 9.2 149.5 9.2 147.3 9.2 145.1 9.2 142.9 9.2 140.7 9.2 138.5 9.2 136.3 9.2 134.1 9.2 131.9 9.2 129.7 9.2 127.5 9.2 125.3 9.2 123.1 9.2 120.9 9.2 118.7 9.2 116.5 9.2 114.3 9.2 112.1 9.1 109.9 9.1 107.7 9.1 105.5 9.1 103.3 9.1 101.1 9.1 98.9 9.1 96.7 9.1 94.5 9.1 92.3 9.1 90.1 9.1 87.9 9.1 85.7 9.1 83.5 9.1 81.3 9.1 79.1 9.1 76.9Z"/></defs>
+<g transform="translate(0 114.6) rotate(-90)">
+<use href="#lh" class="borde"/>
+<use href="#lh" class="asfalto"/>
+<g class="pianos"><g class="pb"><path d="M106.9 117.6 108.2 119.9 109 122.3 109.4 124.9 109.4 127.4 109 130.0 108.2 132.5 107.1 134.8 105.7 137.0 104 139.0 102.1 140.7 100 142.2 97.8 143.4 95.6 144.4"/><path d="M84 139.6 81.9 140.6 79.7 141.8 77.7 143.3 75.7 144.9 74 146.6 72.3 148.5 70.9 150.4 69.6 152.4"/><path d="M71.6 166.5 70.3 168.5 68.8 170.5 67.2 172.3 65.5 174.1 63.6 175.7 61.7 177.2 59.6 178.5 57.5 179.6"/><path d="M47.7 174.4 45.7 175.3 43.5 176.4 41.4 177.7 39.4 179.3 37.6 181.3 36.2 183.6 35.3 186.2 35 188.9 35.2 191.6 36 194.2 37.3 196.7 39 198.8 40.9 200.6 43.1 202.0 45.5 203.1 48 203.9 50.5 204.4 53 204.6 55.6 204.6 58.1 204.3 60.5 203.9 62.9 203.3 65.2 202.4 67.5 201.5 69.6 200.4 71.7 199.2"/><path d="M77.6 195.2 79.4 193.7 81.2 192.0 82.9 190.3 84.5 188.5 85.9 186.5 87.3 184.5 88.5 182.4"/><path d="M84.4 170.5 85.4 168.4 86.7 166.3 88.1 164.3 89.9 162.4 92.1 160.9 94.6 159.8 97.4 159.4 100.1 159.8 102.7 160.9 104.9 162.6 106.5 164.7 107.7 167.0 108.6 169.5 109.1 171.9 109.4 174.3 109.6 176.6"/><path d="M110 212.1 109.9 214.4 109.8 216.8 109.4 219.2 108.9 221.7 107.9 224.1 106.5 226.4 104.6 228.3 102.2 229.8 99.6 230.6 96.8 230.6 94.3 230.1 91.9 229.2 89.8 228.0 87.9 226.8"/><path d="M91.1 218.3 89.1 217.1 87 215.9 84.7 214.9 82.2 214.2 79.6 213.8 77.1 213.8 74.6 214.0 72.2 214.4 69.9 215.0"/><path d="M65.7 225.2 63.3 225.6 60.9 225.9 58.4 225.9 55.9 225.7 53.5 225.4"/><path d="M26.7 223.6 24.4 223.8 22 223.9 19.6 223.8 17.1 223.5 14.6 222.8 12.2 221.5 10.1 219.8 8.4 217.5 7.4 215.0 6.9 212.4 6.8 209.9 7 207.5 7.3 205.2"/><path d="M17.1 199.9 17.3 197.5 17.3 195.1 17.2 192.6 16.9 190.3"/><path d="M4.8 32.6 5.1 30.3 5.4 27.9 5.9 25.5 6.7 23.1 7.6 20.7 8.8 18.5 10.3 16.3 12.1 14.4 14.1 12.7 16.3 11.3 18.8 10.2 21.3 9.6 24 9.3 26.6 9.4 29.1 9.8 31.5 10.4 33.8 11.2"/><path d="M38.7 22.8 41 23.5 43.4 24.2 45.9 24.6 48.4 24.8 50.9 24.8 53.4 24.6 55.9 24.1 58.3 23.4 60.6 22.5 62.8 21.5 64.9 20.4"/><path d="M68.2 8.3 70.3 7.2 72.6 6.2 74.9 5.4 77.4 4.9 80 4.6 82.6 4.6 85.1 5.0 87.6 5.6 89.9 6.4 92.2 7.4 94.4 8.6 96.5 9.9 98.5 11.4 100.4 13.1 102.1 14.9 103.6 16.9 105 19.0 106.1 21.2 107.1 23.5 107.9 25.9 108.5 28.2 109 30.6 109.3 33.0"/><path d="M109.8 77.6 109.6 80.0 109.4 82.4 108.9 84.8 108.2 87.2 107.1 89.6 105.7 91.8 104 93.8 101.9 95.5 99.6 96.8 97.2 97.7 94.8 98.3 92.4 98.7 90 99.0"/><path d="M67.6 99.5 65.3 99.4 62.9 99.2 60.5 98.9 58.1 98.3 55.6 97.5 53.3 96.3 51.1 94.7 49.2 92.9 47.7 90.7 46.5 88.2 45.8 85.6 45.6 82.9 45.9 80.2 46.7 77.7 47.8 75.3 49.3 73.2 50.9 71.2 52.7 69.5 54.5 67.9 56.3 66.5"/><path d="M76 63.5 77.9 62.0 79.7 60.5 81.5 58.7 83.1 56.7 84.4 54.4 85.3 51.9 85.8 49.2 85.8 46.5 85.2 43.9 84.1 41.4 82.4 39.2 80.4 37.4 78 36.0 75.5 35.2 72.9 34.8 70.3 34.8 67.9 35.0 65.5 35.4 63.2 35.9"/><path d="M41.7 42.1 39.5 42.9 37.3 43.8 35.1 44.9 33 46.3 31 47.9 29.2 49.8 27.7 52.0 26.6 54.3 25.7 56.7 25.1 59.1 24.7 61.5 24.4 63.9"/><path d="M24.2 141.4 24.3 143.7 24.6 146.1 25 148.5 25.6 150.9 26.6 153.4 27.9 155.7 29.7 157.7 31.8 159.4 34.3 160.6 36.9 161.3 39.6 161.4 42.3 161.1 44.9 160.2 47.2 159.0 49.3 157.5 51.2 155.7 52.8 153.9 54.3 151.9 55.6 150.0"/><path d="M61.4 122.3 62.8 120.3 64.3 118.4 66 116.6 68 114.9 70.1 113.5 72.4 112.4 74.8 111.6 77.3 111.0 79.7 110.7 82 110.5 84.4 110.4"/><path d="M89 110.4 91.4 110.5 93.8 110.8 96.2 111.2 98.6 111.8 100.9 112.7 103.2 114.0 105.2 115.6 106.9 117.6 108.2 119.9"/></g><g class="pa"><path d="M106.9 117.6 108.2 119.9 109 122.3 109.4 124.9 109.4 127.4 109 130.0 108.2 132.5 107.1 134.8 105.7 137.0 104 139.0 102.1 140.7 100 142.2 97.8 143.4 95.6 144.4"/><path d="M84 139.6 81.9 140.6 79.7 141.8 77.7 143.3 75.7 144.9 74 146.6 72.3 148.5 70.9 150.4 69.6 152.4"/><path d="M71.6 166.5 70.3 168.5 68.8 170.5 67.2 172.3 65.5 174.1 63.6 175.7 61.7 177.2 59.6 178.5 57.5 179.6"/><path d="M47.7 174.4 45.7 175.3 43.5 176.4 41.4 177.7 39.4 179.3 37.6 181.3 36.2 183.6 35.3 186.2 35 188.9 35.2 191.6 36 194.2 37.3 196.7 39 198.8 40.9 200.6 43.1 202.0 45.5 203.1 48 203.9 50.5 204.4 53 204.6 55.6 204.6 58.1 204.3 60.5 203.9 62.9 203.3 65.2 202.4 67.5 201.5 69.6 200.4 71.7 199.2"/><path d="M77.6 195.2 79.4 193.7 81.2 192.0 82.9 190.3 84.5 188.5 85.9 186.5 87.3 184.5 88.5 182.4"/><path d="M84.4 170.5 85.4 168.4 86.7 166.3 88.1 164.3 89.9 162.4 92.1 160.9 94.6 159.8 97.4 159.4 100.1 159.8 102.7 160.9 104.9 162.6 106.5 164.7 107.7 167.0 108.6 169.5 109.1 171.9 109.4 174.3 109.6 176.6"/><path d="M110 212.1 109.9 214.4 109.8 216.8 109.4 219.2 108.9 221.7 107.9 224.1 106.5 226.4 104.6 228.3 102.2 229.8 99.6 230.6 96.8 230.6 94.3 230.1 91.9 229.2 89.8 228.0 87.9 226.8"/><path d="M91.1 218.3 89.1 217.1 87 215.9 84.7 214.9 82.2 214.2 79.6 213.8 77.1 213.8 74.6 214.0 72.2 214.4 69.9 215.0"/><path d="M65.7 225.2 63.3 225.6 60.9 225.9 58.4 225.9 55.9 225.7 53.5 225.4"/><path d="M26.7 223.6 24.4 223.8 22 223.9 19.6 223.8 17.1 223.5 14.6 222.8 12.2 221.5 10.1 219.8 8.4 217.5 7.4 215.0 6.9 212.4 6.8 209.9 7 207.5 7.3 205.2"/><path d="M17.1 199.9 17.3 197.5 17.3 195.1 17.2 192.6 16.9 190.3"/><path d="M4.8 32.6 5.1 30.3 5.4 27.9 5.9 25.5 6.7 23.1 7.6 20.7 8.8 18.5 10.3 16.3 12.1 14.4 14.1 12.7 16.3 11.3 18.8 10.2 21.3 9.6 24 9.3 26.6 9.4 29.1 9.8 31.5 10.4 33.8 11.2"/><path d="M38.7 22.8 41 23.5 43.4 24.2 45.9 24.6 48.4 24.8 50.9 24.8 53.4 24.6 55.9 24.1 58.3 23.4 60.6 22.5 62.8 21.5 64.9 20.4"/><path d="M68.2 8.3 70.3 7.2 72.6 6.2 74.9 5.4 77.4 4.9 80 4.6 82.6 4.6 85.1 5.0 87.6 5.6 89.9 6.4 92.2 7.4 94.4 8.6 96.5 9.9 98.5 11.4 100.4 13.1 102.1 14.9 103.6 16.9 105 19.0 106.1 21.2 107.1 23.5 107.9 25.9 108.5 28.2 109 30.6 109.3 33.0"/><path d="M109.8 77.6 109.6 80.0 109.4 82.4 108.9 84.8 108.2 87.2 107.1 89.6 105.7 91.8 104 93.8 101.9 95.5 99.6 96.8 97.2 97.7 94.8 98.3 92.4 98.7 90 99.0"/><path d="M67.6 99.5 65.3 99.4 62.9 99.2 60.5 98.9 58.1 98.3 55.6 97.5 53.3 96.3 51.1 94.7 49.2 92.9 47.7 90.7 46.5 88.2 45.8 85.6 45.6 82.9 45.9 80.2 46.7 77.7 47.8 75.3 49.3 73.2 50.9 71.2 52.7 69.5 54.5 67.9 56.3 66.5"/><path d="M76 63.5 77.9 62.0 79.7 60.5 81.5 58.7 83.1 56.7 84.4 54.4 85.3 51.9 85.8 49.2 85.8 46.5 85.2 43.9 84.1 41.4 82.4 39.2 80.4 37.4 78 36.0 75.5 35.2 72.9 34.8 70.3 34.8 67.9 35.0 65.5 35.4 63.2 35.9"/><path d="M41.7 42.1 39.5 42.9 37.3 43.8 35.1 44.9 33 46.3 31 47.9 29.2 49.8 27.7 52.0 26.6 54.3 25.7 56.7 25.1 59.1 24.7 61.5 24.4 63.9"/><path d="M24.2 141.4 24.3 143.7 24.6 146.1 25 148.5 25.6 150.9 26.6 153.4 27.9 155.7 29.7 157.7 31.8 159.4 34.3 160.6 36.9 161.3 39.6 161.4 42.3 161.1 44.9 160.2 47.2 159.0 49.3 157.5 51.2 155.7 52.8 153.9 54.3 151.9 55.6 150.0"/><path d="M61.4 122.3 62.8 120.3 64.3 118.4 66 116.6 68 114.9 70.1 113.5 72.4 112.4 74.8 111.6 77.3 111.0 79.7 110.7 82 110.5 84.4 110.4"/><path d="M89 110.4 91.4 110.5 93.8 110.8 96.2 111.2 98.6 111.8 100.9 112.7 103.2 114.0 105.2 115.6 106.9 117.6 108.2 119.9"/></g></g>
+<path class="barrera" d="M3.6 158.3 3.6 156.1 3.6 153.9 3.5 151.7 3.5 149.5 3.5 147.3 3.5 145.1 3.5 142.9 3.5 140.7 3.5 138.5 3.5 136.3 3.5 134.1 3.5 131.9 3.5 129.7 3.5 127.5 3.5 125.3 3.5 123.1 3.5 120.9 3.5 118.7 3.5 116.5 3.5 114.3 3.5 112.1 3.4 109.9 3.4 107.7 3.4 105.5 3.4 103.3 3.4 101.1 3.4 98.9 3.4 96.7 3.4 94.5 3.4 92.3 3.4 90.1 3.4 87.9 3.4 85.7 3.4 83.5 3.4 81.3 3.4 79.1 3.4 76.9 3.4 74.7 3.4 72.5 3.4 70.3 3.4 68.1 3.4 65.9 3.3 63.7 3.3 61.5 3.3 59.3 3.3 57.1 3.3 54.9 3.3 52.7 3.3 50.5 3.3 48.3 3.3 46.1"/>
+<g class="parrilla"><path d="M6.2 81.3L8.8 81.3"/><path d="M9.4 87.9L12.0 87.9"/><path d="M6.2 94.5L8.8 94.5"/><path d="M9.4 101.1L12.0 101.1"/><path d="M6.2 107.7L8.8 107.7"/><path d="M9.5 114.3L12.1 114.3"/></g>
+<g class="meta"><rect x="5.57" y="75.74" width="1.00" height="1.00" transform="rotate(-90.1 5.57 75.74)"/><rect x="7.57" y="75.73" width="1.00" height="1.00" transform="rotate(-90.1 7.57 75.73)"/><rect x="9.57" y="75.73" width="1.00" height="1.00" transform="rotate(-90.1 9.57 75.73)"/><rect x="11.57" y="75.72" width="1.00" height="1.00" transform="rotate(-90.1 11.57 75.72)"/><rect x="6.57" y="74.74" width="1.00" height="1.00" transform="rotate(-90.1 6.57 74.74)"/><rect x="8.57" y="74.73" width="1.00" height="1.00" transform="rotate(-90.1 8.57 74.73)"/><rect x="10.57" y="74.73" width="1.00" height="1.00" transform="rotate(-90.1 10.57 74.73)"/></g>
+<g class="kart" transform="translate(9.1 74.7)"><circle class="aura" r="5"/><circle r="2.4"/></g>
+</g>
+<g class="portico"><rect x="86.7" y="97.0" width="42" height="16.8" rx="2"/><image href="img/logo-villafranca-s.webp" x="87.7" y="98.0" width="40" height="14.8"/></g>
+</svg>
+      <svg class="pista pista-v" viewBox="0 0 114.6 235.2" role="img" aria-label="Trazado del circuito de Karting Villafranca: la recta de meta con su parrilla, los pianos azules de las curvas y el pórtico con el logo">
+<defs><path id="lv" d="M9.1 74.7 9.1 72.5 9.1 70.3 9.1 68.1 9.1 65.9 9 63.7 9 61.5 9 59.3 9 57.1 9 54.9 9 52.7 9 50.5 9 48.3 9 46.1 9 43.9 9 41.7 9 39.5 9 37.3 9.1 35.1 9.2 33.0 9.4 30.8 9.7 28.7 10.2 26.6 10.8 24.5 11.6 22.6 12.6 20.7 13.8 19.1 15.1 17.5 16.7 16.2 18.4 15.2 20.2 14.4 22.1 13.9 24.1 13.7 26.1 13.8 28.2 14.1 30.2 14.6 32.2 15.3 34.2 16.1 36.2 17.0 38.2 17.8 40.2 18.6 42.3 19.3 44.3 19.9 46.4 20.2 48.6 20.4 50.7 20.4 52.8 20.2 54.9 19.8 56.9 19.2 58.9 18.5 60.9 17.6 62.8 16.6 64.7 15.5 66.6 14.4 68.4 13.2 70.3 12.1 72.2 11.2 74.1 10.3 76.1 9.7 78.1 9.2 80.2 9.0 82.2 9.0 84.3 9.3 86.3 9.8 88.3 10.5 90.3 11.3 92.2 12.3 94 13.5 95.7 14.8 97.3 16.2 98.7 17.8 100 19.5 101.2 21.3 102.2 23.1 103 25.1 103.7 27.1 104.2 29.2 104.6 31.3 104.9 33.5 105.1 35.6 105.2 37.8 105.3 40.0 105.3 42.2 105.4 44.4 105.4 46.6 105.4 48.8 105.4 51.0 105.4 53.2 105.4 55.4 105.4 57.6 105.4 59.8 105.4 62.0 105.5 64.2 105.5 66.4 105.5 68.6 105.5 70.8 105.5 73.0 105.5 75.2 105.4 77.4 105.3 79.6 105 81.7 104.6 83.8 104 85.7 103.2 87.5 102.2 89.2 100.9 90.6 99.5 91.8 97.8 92.8 95.9 93.5 93.9 94.0 91.8 94.4 89.7 94.6 87.5 94.7 85.3 94.8 83.1 94.8 80.9 94.9 78.7 94.9 76.5 95.0 74.3 95.0 72.1 95.1 69.9 95.1 67.7 95.1 65.5 95.0 63.4 94.9 61.3 94.6 59.3 94.1 57.4 93.4 55.6 92.5 54 91.4 52.6 90.0 51.4 88.4 50.6 86.7 50.1 84.9 50 83.0 50.2 81.1 50.8 79.3 51.6 77.5 52.8 75.8 54.1 74.2 55.6 72.7 57.3 71.3 59 70.0 60.8 68.7 62.6 67.4 64.4 66.2 66.2 64.9 68 63.7 69.8 62.5 71.6 61.2 73.4 60.0 75.1 58.6 76.7 57.3 78.2 55.8 79.4 54.2 80.4 52.5 81.1 50.7 81.4 48.9 81.4 47.0 81 45.2 80.3 43.6 79.2 42.1 77.8 40.9 76.2 40.0 74.5 39.5 72.5 39.2 70.5 39.2 68.5 39.4 66.4 39.7 64.3 40.2 62.1 40.8 60 41.4 57.9 42.0 55.8 42.6 53.7 43.2 51.6 43.8 49.4 44.4 47.3 45.0 45.2 45.6 43.1 46.3 41.1 47.0 39.1 47.8 37.3 48.8 35.6 49.8 34 51.1 32.7 52.6 31.5 54.2 30.6 56.0 29.9 58.0 29.4 60.0 29 62.1 28.8 64.3 28.7 66.4 28.6 68.6 28.6 70.8 28.6 73.0 28.6 75.2 28.6 77.4 28.6 79.6 28.6 81.8 28.6 84.0 28.6 86.2 28.6 88.4 28.6 90.6 28.6 92.8 28.6 95.0 28.6 97.2 28.6 99.4 28.6 101.6 28.6 103.8 28.6 106.0 28.6 108.2 28.6 110.4 28.6 112.6 28.6 114.8 28.6 117.0 28.6 119.2 28.6 121.4 28.6 123.6 28.6 125.8 28.6 128.0 28.6 130.2 28.6 132.4 28.6 134.6 28.6 136.8 28.6 139.0 28.6 141.2 28.7 143.4 28.9 145.5 29.3 147.6 29.8 149.6 30.5 151.4 31.5 153.1 32.7 154.5 34.2 155.7 35.8 156.5 37.6 157.0 39.4 157.1 41.3 156.8 43.1 156.2 44.9 155.2 46.5 154.1 48 152.6 49.4 151.1 50.7 149.4 51.9 147.6 53.1 145.7 54.2 143.8 55.3 141.9 56.4 140.0 57.4 138.1 58.5 136.1 59.6 134.2 60.6 132.3 61.7 130.4 62.8 128.5 63.9 126.6 65.1 124.7 66.3 123.0 67.6 121.3 69 119.8 70.6 118.5 72.3 117.4 74.1 116.5 76 115.8 78.1 115.4 80.2 115.1 82.3 114.9 84.5 114.8 86.7 114.8 88.9 114.8 91.1 114.9 93.2 115.1 95.3 115.5 97.2 116.0 99.1 116.7 100.7 117.6 102.1 118.8 103.3 120.1 104.1 121.6 104.7 123.4 105 125.2 105 127.1 104.7 129.0 104.1 130.9 103.3 132.7 102.2 134.4 100.9 135.9 99.4 137.3 97.7 138.4 95.8 139.5 93.9 140.4 91.9 141.2 89.8 142.0 87.8 142.7 85.8 143.6 83.9 144.5 82.1 145.6 80.3 146.8 78.7 148.1 77.2 149.6 75.8 151.2 74.5 152.9 73.3 154.7 72.2 156.6 71.1 158.5 70 160.4 69 162.3 67.8 164.2 66.7 166.0 65.4 167.7 64 169.4 62.5 170.9 60.9 172.3 59.2 173.5 57.4 174.7 55.5 175.7 53.5 176.7 51.5 177.5 49.5 178.4 47.6 179.3 45.7 180.2 44 181.3 42.4 182.5 41.2 184.0 40.2 185.5 39.6 187.2 39.4 189.0 39.6 190.8 40.1 192.6 41 194.3 42.2 195.8 43.6 197.1 45.3 198.2 47.1 199.0 49.1 199.6 51.1 200.0 53.2 200.2 55.3 200.2 57.5 200.0 59.6 199.6 61.6 199.0 63.6 198.3 65.6 197.5 67.6 196.5 69.4 195.4 71.3 194.3 73.1 193.0 74.8 191.7 76.5 190.3 78.1 188.9 79.6 187.3 81 185.7 82.3 184.0 83.5 182.2 84.6 180.3 85.6 178.4 86.5 176.4 87.4 174.4 88.3 172.4 89.3 170.5 90.3 168.7 91.5 167.1 92.8 165.7 94.3 164.7 95.8 164.0 97.4 163.8 99 164.0 100.4 164.7 101.7 165.7 102.8 167.1 103.7 168.7 104.3 170.6 104.7 172.6 105 174.7 105.2 176.9 105.2 179.1 105.3 181.3 105.3 183.5 105.3 185.7 105.4 187.9 105.4 190.1 105.4 192.3 105.4 194.5 105.5 196.7 105.5 198.9 105.5 201.1 105.5 203.3 105.5 205.5 105.6 207.7 105.6 209.9 105.6 212.1 105.5 214.2 105.4 216.4 105.1 218.4 104.7 220.4 104 222.2 103 223.7 101.9 224.9 100.5 225.8 98.9 226.2 97.2 226.2 95.5 225.9 93.8 225.2 92.1 224.3 90.3 223.2 88.6 222.0 86.9 220.8 85.1 219.9 83.2 219.1 81.3 218.5 79.3 218.2 77.2 218.1 75.2 218.3 73.1 218.7 71 219.3 69 219.8 66.9 220.4 64.8 220.9 62.7 221.3 60.6 221.5 58.5 221.5 56.4 221.4 54.3 221.0 52.2 220.6 50 220.1 47.9 219.7 45.8 219.2 43.7 218.8 41.5 218.6 39.4 218.4 37.2 218.4 35 218.4 32.8 218.6 30.7 218.8 28.5 219.0 26.3 219.2 24.1 219.4 22 219.5 19.9 219.5 18 219.2 16.2 218.7 14.6 217.9 13.3 216.8 12.3 215.4 11.7 213.8 11.3 212.0 11.2 210.0 11.4 208.0 11.7 205.8 12.1 203.7 12.4 201.6 12.7 199.4 12.9 197.3 12.9 195.1 12.8 193.0 12.6 190.9 12.2 188.7 11.8 186.6 11.3 184.5 10.9 182.3 10.4 180.2 10.1 178.0 9.8 175.9 9.6 173.7 9.4 171.5 9.4 169.3 9.3 167.1 9.3 164.9 9.3 162.7 9.3 160.5 9.3 158.3 9.3 156.1 9.3 153.9 9.2 151.7 9.2 149.5 9.2 147.3 9.2 145.1 9.2 142.9 9.2 140.7 9.2 138.5 9.2 136.3 9.2 134.1 9.2 131.9 9.2 129.7 9.2 127.5 9.2 125.3 9.2 123.1 9.2 120.9 9.2 118.7 9.2 116.5 9.2 114.3 9.2 112.1 9.1 109.9 9.1 107.7 9.1 105.5 9.1 103.3 9.1 101.1 9.1 98.9 9.1 96.7 9.1 94.5 9.1 92.3 9.1 90.1 9.1 87.9 9.1 85.7 9.1 83.5 9.1 81.3 9.1 79.1 9.1 76.9Z"/></defs>
+<g >
+<use href="#lv" class="borde"/>
+<use href="#lv" class="asfalto"/>
+<g class="pianos"><g class="pb"><path d="M106.9 117.6 108.2 119.9 109 122.3 109.4 124.9 109.4 127.4 109 130.0 108.2 132.5 107.1 134.8 105.7 137.0 104 139.0 102.1 140.7 100 142.2 97.8 143.4 95.6 144.4"/><path d="M84 139.6 81.9 140.6 79.7 141.8 77.7 143.3 75.7 144.9 74 146.6 72.3 148.5 70.9 150.4 69.6 152.4"/><path d="M71.6 166.5 70.3 168.5 68.8 170.5 67.2 172.3 65.5 174.1 63.6 175.7 61.7 177.2 59.6 178.5 57.5 179.6"/><path d="M47.7 174.4 45.7 175.3 43.5 176.4 41.4 177.7 39.4 179.3 37.6 181.3 36.2 183.6 35.3 186.2 35 188.9 35.2 191.6 36 194.2 37.3 196.7 39 198.8 40.9 200.6 43.1 202.0 45.5 203.1 48 203.9 50.5 204.4 53 204.6 55.6 204.6 58.1 204.3 60.5 203.9 62.9 203.3 65.2 202.4 67.5 201.5 69.6 200.4 71.7 199.2"/><path d="M77.6 195.2 79.4 193.7 81.2 192.0 82.9 190.3 84.5 188.5 85.9 186.5 87.3 184.5 88.5 182.4"/><path d="M84.4 170.5 85.4 168.4 86.7 166.3 88.1 164.3 89.9 162.4 92.1 160.9 94.6 159.8 97.4 159.4 100.1 159.8 102.7 160.9 104.9 162.6 106.5 164.7 107.7 167.0 108.6 169.5 109.1 171.9 109.4 174.3 109.6 176.6"/><path d="M110 212.1 109.9 214.4 109.8 216.8 109.4 219.2 108.9 221.7 107.9 224.1 106.5 226.4 104.6 228.3 102.2 229.8 99.6 230.6 96.8 230.6 94.3 230.1 91.9 229.2 89.8 228.0 87.9 226.8"/><path d="M91.1 218.3 89.1 217.1 87 215.9 84.7 214.9 82.2 214.2 79.6 213.8 77.1 213.8 74.6 214.0 72.2 214.4 69.9 215.0"/><path d="M65.7 225.2 63.3 225.6 60.9 225.9 58.4 225.9 55.9 225.7 53.5 225.4"/><path d="M26.7 223.6 24.4 223.8 22 223.9 19.6 223.8 17.1 223.5 14.6 222.8 12.2 221.5 10.1 219.8 8.4 217.5 7.4 215.0 6.9 212.4 6.8 209.9 7 207.5 7.3 205.2"/><path d="M17.1 199.9 17.3 197.5 17.3 195.1 17.2 192.6 16.9 190.3"/><path d="M4.8 32.6 5.1 30.3 5.4 27.9 5.9 25.5 6.7 23.1 7.6 20.7 8.8 18.5 10.3 16.3 12.1 14.4 14.1 12.7 16.3 11.3 18.8 10.2 21.3 9.6 24 9.3 26.6 9.4 29.1 9.8 31.5 10.4 33.8 11.2"/><path d="M38.7 22.8 41 23.5 43.4 24.2 45.9 24.6 48.4 24.8 50.9 24.8 53.4 24.6 55.9 24.1 58.3 23.4 60.6 22.5 62.8 21.5 64.9 20.4"/><path d="M68.2 8.3 70.3 7.2 72.6 6.2 74.9 5.4 77.4 4.9 80 4.6 82.6 4.6 85.1 5.0 87.6 5.6 89.9 6.4 92.2 7.4 94.4 8.6 96.5 9.9 98.5 11.4 100.4 13.1 102.1 14.9 103.6 16.9 105 19.0 106.1 21.2 107.1 23.5 107.9 25.9 108.5 28.2 109 30.6 109.3 33.0"/><path d="M109.8 77.6 109.6 80.0 109.4 82.4 108.9 84.8 108.2 87.2 107.1 89.6 105.7 91.8 104 93.8 101.9 95.5 99.6 96.8 97.2 97.7 94.8 98.3 92.4 98.7 90 99.0"/><path d="M67.6 99.5 65.3 99.4 62.9 99.2 60.5 98.9 58.1 98.3 55.6 97.5 53.3 96.3 51.1 94.7 49.2 92.9 47.7 90.7 46.5 88.2 45.8 85.6 45.6 82.9 45.9 80.2 46.7 77.7 47.8 75.3 49.3 73.2 50.9 71.2 52.7 69.5 54.5 67.9 56.3 66.5"/><path d="M76 63.5 77.9 62.0 79.7 60.5 81.5 58.7 83.1 56.7 84.4 54.4 85.3 51.9 85.8 49.2 85.8 46.5 85.2 43.9 84.1 41.4 82.4 39.2 80.4 37.4 78 36.0 75.5 35.2 72.9 34.8 70.3 34.8 67.9 35.0 65.5 35.4 63.2 35.9"/><path d="M41.7 42.1 39.5 42.9 37.3 43.8 35.1 44.9 33 46.3 31 47.9 29.2 49.8 27.7 52.0 26.6 54.3 25.7 56.7 25.1 59.1 24.7 61.5 24.4 63.9"/><path d="M24.2 141.4 24.3 143.7 24.6 146.1 25 148.5 25.6 150.9 26.6 153.4 27.9 155.7 29.7 157.7 31.8 159.4 34.3 160.6 36.9 161.3 39.6 161.4 42.3 161.1 44.9 160.2 47.2 159.0 49.3 157.5 51.2 155.7 52.8 153.9 54.3 151.9 55.6 150.0"/><path d="M61.4 122.3 62.8 120.3 64.3 118.4 66 116.6 68 114.9 70.1 113.5 72.4 112.4 74.8 111.6 77.3 111.0 79.7 110.7 82 110.5 84.4 110.4"/><path d="M89 110.4 91.4 110.5 93.8 110.8 96.2 111.2 98.6 111.8 100.9 112.7 103.2 114.0 105.2 115.6 106.9 117.6 108.2 119.9"/></g><g class="pa"><path d="M106.9 117.6 108.2 119.9 109 122.3 109.4 124.9 109.4 127.4 109 130.0 108.2 132.5 107.1 134.8 105.7 137.0 104 139.0 102.1 140.7 100 142.2 97.8 143.4 95.6 144.4"/><path d="M84 139.6 81.9 140.6 79.7 141.8 77.7 143.3 75.7 144.9 74 146.6 72.3 148.5 70.9 150.4 69.6 152.4"/><path d="M71.6 166.5 70.3 168.5 68.8 170.5 67.2 172.3 65.5 174.1 63.6 175.7 61.7 177.2 59.6 178.5 57.5 179.6"/><path d="M47.7 174.4 45.7 175.3 43.5 176.4 41.4 177.7 39.4 179.3 37.6 181.3 36.2 183.6 35.3 186.2 35 188.9 35.2 191.6 36 194.2 37.3 196.7 39 198.8 40.9 200.6 43.1 202.0 45.5 203.1 48 203.9 50.5 204.4 53 204.6 55.6 204.6 58.1 204.3 60.5 203.9 62.9 203.3 65.2 202.4 67.5 201.5 69.6 200.4 71.7 199.2"/><path d="M77.6 195.2 79.4 193.7 81.2 192.0 82.9 190.3 84.5 188.5 85.9 186.5 87.3 184.5 88.5 182.4"/><path d="M84.4 170.5 85.4 168.4 86.7 166.3 88.1 164.3 89.9 162.4 92.1 160.9 94.6 159.8 97.4 159.4 100.1 159.8 102.7 160.9 104.9 162.6 106.5 164.7 107.7 167.0 108.6 169.5 109.1 171.9 109.4 174.3 109.6 176.6"/><path d="M110 212.1 109.9 214.4 109.8 216.8 109.4 219.2 108.9 221.7 107.9 224.1 106.5 226.4 104.6 228.3 102.2 229.8 99.6 230.6 96.8 230.6 94.3 230.1 91.9 229.2 89.8 228.0 87.9 226.8"/><path d="M91.1 218.3 89.1 217.1 87 215.9 84.7 214.9 82.2 214.2 79.6 213.8 77.1 213.8 74.6 214.0 72.2 214.4 69.9 215.0"/><path d="M65.7 225.2 63.3 225.6 60.9 225.9 58.4 225.9 55.9 225.7 53.5 225.4"/><path d="M26.7 223.6 24.4 223.8 22 223.9 19.6 223.8 17.1 223.5 14.6 222.8 12.2 221.5 10.1 219.8 8.4 217.5 7.4 215.0 6.9 212.4 6.8 209.9 7 207.5 7.3 205.2"/><path d="M17.1 199.9 17.3 197.5 17.3 195.1 17.2 192.6 16.9 190.3"/><path d="M4.8 32.6 5.1 30.3 5.4 27.9 5.9 25.5 6.7 23.1 7.6 20.7 8.8 18.5 10.3 16.3 12.1 14.4 14.1 12.7 16.3 11.3 18.8 10.2 21.3 9.6 24 9.3 26.6 9.4 29.1 9.8 31.5 10.4 33.8 11.2"/><path d="M38.7 22.8 41 23.5 43.4 24.2 45.9 24.6 48.4 24.8 50.9 24.8 53.4 24.6 55.9 24.1 58.3 23.4 60.6 22.5 62.8 21.5 64.9 20.4"/><path d="M68.2 8.3 70.3 7.2 72.6 6.2 74.9 5.4 77.4 4.9 80 4.6 82.6 4.6 85.1 5.0 87.6 5.6 89.9 6.4 92.2 7.4 94.4 8.6 96.5 9.9 98.5 11.4 100.4 13.1 102.1 14.9 103.6 16.9 105 19.0 106.1 21.2 107.1 23.5 107.9 25.9 108.5 28.2 109 30.6 109.3 33.0"/><path d="M109.8 77.6 109.6 80.0 109.4 82.4 108.9 84.8 108.2 87.2 107.1 89.6 105.7 91.8 104 93.8 101.9 95.5 99.6 96.8 97.2 97.7 94.8 98.3 92.4 98.7 90 99.0"/><path d="M67.6 99.5 65.3 99.4 62.9 99.2 60.5 98.9 58.1 98.3 55.6 97.5 53.3 96.3 51.1 94.7 49.2 92.9 47.7 90.7 46.5 88.2 45.8 85.6 45.6 82.9 45.9 80.2 46.7 77.7 47.8 75.3 49.3 73.2 50.9 71.2 52.7 69.5 54.5 67.9 56.3 66.5"/><path d="M76 63.5 77.9 62.0 79.7 60.5 81.5 58.7 83.1 56.7 84.4 54.4 85.3 51.9 85.8 49.2 85.8 46.5 85.2 43.9 84.1 41.4 82.4 39.2 80.4 37.4 78 36.0 75.5 35.2 72.9 34.8 70.3 34.8 67.9 35.0 65.5 35.4 63.2 35.9"/><path d="M41.7 42.1 39.5 42.9 37.3 43.8 35.1 44.9 33 46.3 31 47.9 29.2 49.8 27.7 52.0 26.6 54.3 25.7 56.7 25.1 59.1 24.7 61.5 24.4 63.9"/><path d="M24.2 141.4 24.3 143.7 24.6 146.1 25 148.5 25.6 150.9 26.6 153.4 27.9 155.7 29.7 157.7 31.8 159.4 34.3 160.6 36.9 161.3 39.6 161.4 42.3 161.1 44.9 160.2 47.2 159.0 49.3 157.5 51.2 155.7 52.8 153.9 54.3 151.9 55.6 150.0"/><path d="M61.4 122.3 62.8 120.3 64.3 118.4 66 116.6 68 114.9 70.1 113.5 72.4 112.4 74.8 111.6 77.3 111.0 79.7 110.7 82 110.5 84.4 110.4"/><path d="M89 110.4 91.4 110.5 93.8 110.8 96.2 111.2 98.6 111.8 100.9 112.7 103.2 114.0 105.2 115.6 106.9 117.6 108.2 119.9"/></g></g>
+<path class="barrera" d="M3.6 158.3 3.6 156.1 3.6 153.9 3.5 151.7 3.5 149.5 3.5 147.3 3.5 145.1 3.5 142.9 3.5 140.7 3.5 138.5 3.5 136.3 3.5 134.1 3.5 131.9 3.5 129.7 3.5 127.5 3.5 125.3 3.5 123.1 3.5 120.9 3.5 118.7 3.5 116.5 3.5 114.3 3.5 112.1 3.4 109.9 3.4 107.7 3.4 105.5 3.4 103.3 3.4 101.1 3.4 98.9 3.4 96.7 3.4 94.5 3.4 92.3 3.4 90.1 3.4 87.9 3.4 85.7 3.4 83.5 3.4 81.3 3.4 79.1 3.4 76.9 3.4 74.7 3.4 72.5 3.4 70.3 3.4 68.1 3.4 65.9 3.3 63.7 3.3 61.5 3.3 59.3 3.3 57.1 3.3 54.9 3.3 52.7 3.3 50.5 3.3 48.3 3.3 46.1"/>
+<g class="parrilla"><path d="M6.2 81.3L8.8 81.3"/><path d="M9.4 87.9L12.0 87.9"/><path d="M6.2 94.5L8.8 94.5"/><path d="M9.4 101.1L12.0 101.1"/><path d="M6.2 107.7L8.8 107.7"/><path d="M9.5 114.3L12.1 114.3"/></g>
+<g class="meta"><rect x="5.57" y="75.74" width="1.00" height="1.00" transform="rotate(-90.1 5.57 75.74)"/><rect x="7.57" y="75.73" width="1.00" height="1.00" transform="rotate(-90.1 7.57 75.73)"/><rect x="9.57" y="75.73" width="1.00" height="1.00" transform="rotate(-90.1 9.57 75.73)"/><rect x="11.57" y="75.72" width="1.00" height="1.00" transform="rotate(-90.1 11.57 75.72)"/><rect x="6.57" y="74.74" width="1.00" height="1.00" transform="rotate(-90.1 6.57 74.74)"/><rect x="8.57" y="74.73" width="1.00" height="1.00" transform="rotate(-90.1 8.57 74.73)"/><rect x="10.57" y="74.73" width="1.00" height="1.00" transform="rotate(-90.1 10.57 74.73)"/></g>
+<g class="kart" transform="translate(9.1 74.7)"><circle class="aura" r="5"/><circle r="2.4"/></g>
+</g>
+<g class="portico"><rect x="1.0" y="99.3" width="42" height="16.8" rx="2"/><image href="img/logo-villafranca-s.webp" x="2.0" y="100.3" width="40" height="14.8"/></g>
+</svg>
+      <div class="pie"><span>Su trazado, dibujado desde OpenStreetMap (ilustrativo, sin escala de detalle)</span><span>CO-3103, km 1 · Villafranca de Córdoba</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="piano" aria-hidden="true"></div>
+
+<figure class="recta" style="margin:0">
+  <picture>
+    <source media="(max-width:700px)" srcset="img/recta-m.webp">
+    <img src="img/recta.webp" width="1440" height="866" loading="lazy" alt="La recta de meta de Karting Villafranca, con la parrilla pintada, los pianos azules y el pórtico con su nombre, entre olivos">
+  </picture>
+  <figcaption>
+    <div class="wrap">
+      <blockquote>«Los karts están super bien y el circuito… pedazo pista. El trazado es super divertido.»</blockquote>
+      <cite>David García Poza · reseña en Google, hizo un Gran Premio con su hermano</cite>
+    </div>
+  </figcaption>
+</figure>
+
+<section class="parrilla-sec" id="parrilla" aria-labelledby="t-parrilla">
+  <div class="wrap">
+    <div class="cabeza revela">
+      <h2 id="t-parrilla">Elige tu sitio en la parrilla.</h2>
+      <p>Cinco formas de salir a pista, del ensayo rápido al día entero. El precio es por piloto, el mismo que en su tarifa.</p>
+    </div>
+    <ol class="parrilla">
+      <li class="cajon revela"><span class="pos" aria-hidden="true">P1</span>
+        <div class="neum" style="--c:var(--n-tanda)">18 €<small>por piloto</small></div>
+        <h3>Tanda</h3>
+        <p>8 minutos cronometrados. Para probar la pista.</p>
+        <div><div class="minutos" role="img" aria-label="8 minutos de tanda"><span class="t" style="--m:8"></span><span style="--m:22"></span></div></div>
+        <button class="elegir" data-formato="tanda">Montar con la tanda</button>
+      </li>
+      <li class="cajon revela"><span class="pos" aria-hidden="true">P2</span>
+        <div class="neum" style="--c:var(--n-mini)">38 €<small>por piloto</small></div>
+        <h3>Mini Gran Premio</h3>
+        <p>8 min de clasificación, parrilla de salida y 8 min de carrera.</p>
+        <div><div class="minutos" role="img" aria-label="8 minutos de clasificación y 8 de carrera"><span class="c" style="--m:8"></span><span class="r" style="--m:8"></span><span style="--m:14"></span></div></div>
+        <button class="elegir" data-formato="mini">Montar con el Mini GP</button>
+      </li>
+      <li class="cajon revela"><span class="pos" aria-hidden="true">P3</span>
+        <div class="neum" style="--c:var(--n-gp)">43 €<small>por piloto</small></div>
+        <h3>Gran Premio</h3>
+        <p>8 min de entrenamientos, 8 de clasificación, parrilla y 8 de carrera.</p>
+        <div><div class="minutos" role="img" aria-label="8 minutos de entrenamientos, 8 de clasificación y 8 de carrera"><span class="e" style="--m:8"></span><span class="c" style="--m:8"></span><span class="r" style="--m:8"></span><span style="--m:6"></span></div></div>
+        <button class="elegir" data-formato="gp">Montar con el Gran Premio</button>
+      </li>
+      <li class="cajon revela"><span class="pos" aria-hidden="true">P4</span>
+        <div class="neum" style="--c:var(--n-super)">49 €<small>por piloto</small></div>
+        <h3>Súper Gran Premio</h3>
+        <p>10 min de entrenamientos, 10 de clasificación, parrilla y 10 de carrera.</p>
+        <div><div class="minutos" role="img" aria-label="10 minutos de entrenamientos, 10 de clasificación y 10 de carrera"><span class="e" style="--m:10"></span><span class="c" style="--m:10"></span><span class="r" style="--m:10"></span></div></div>
+        <button class="elegir" data-formato="super">Montar con el Súper GP</button>
+      </li>
+      <li class="cajon revela"><span class="pos" aria-hidden="true">P5</span>
+        <div class="neum" style="--c:var(--n-pase)">57 €<small>el día</small></div>
+        <h3>Pase de pista, 1 día</h3>
+        <p>Día completo con kart privado, de 10:00 a 18:00 h.</p>
+        <div class="leyenda"><span><i style="background:var(--gris-claro)"></i>Entrenos</span><span><i style="background:var(--cal)"></i>Clasificación</span><span><i style="background:var(--azul)"></i>Carrera o tanda</span></div>
+        <button class="elegir" data-formato="pase">Preguntar por el pase</button>
+      </li>
+    </ol>
+    <p class="parrilla-nota">Las barras miden minutos en pista (la más larga, 30). Tarifas de su web; el pase de pista sale de su cartel de tarifas y está por confirmar. Para conducir: 15 años, 1,50 m de altura y hasta 120 kg.</p>
+  </div>
+</section>
+
+<div class="piano fino" aria-hidden="true"></div>
+
+<section class="monta" id="monta" aria-labelledby="t-monta">
+  <div class="wrap">
+    <div class="cabeza revela">
+      <h2 id="t-monta">Monta tu carrera y mándala.</h2>
+      <p>Elige formato, cuántos sois y qué día. Te sale el total y el mensaje listo para WhatsApp: te confirman hueco y la señal desde el circuito.</p>
+    </div>
+    <div class="monta-grid">
+      <form id="form-carrera" novalidate>
+        <fieldset>
+          <legend>Formato</legend>
+          <div class="chips">
+            <label><input type="radio" name="formato" value="tanda"><span><i style="--c:var(--n-tanda)"></i>Tanda · 18 €</span></label>
+            <label><input type="radio" name="formato" value="mini"><span><i style="--c:var(--n-mini)"></i>Mini GP · 38 €</span></label>
+            <label><input type="radio" name="formato" value="gp" checked><span><i style="--c:var(--n-gp)"></i>Gran Premio · 43 €</span></label>
+            <label><input type="radio" name="formato" value="super"><span><i style="--c:var(--n-super)"></i>Súper GP · 49 €</span></label>
+            <label><input type="radio" name="formato" value="pase"><span><i style="--c:var(--n-pase)"></i>Pase 1 día · 57 €</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend id="l-pilotos">Pilotos</legend>
+          <div class="pilotos">
+            <button type="button" data-paso="-1" aria-label="Un piloto menos">−</button>
+            <input id="pilotos" type="number" inputmode="numeric" min="1" max="40" value="8" aria-labelledby="l-pilotos">
+            <button type="button" data-paso="1" aria-label="Un piloto más">+</button>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Cuándo</legend>
+          <div class="fila">
+            <label class="campo">Día<input id="dia" type="date"></label>
+            <label class="campo">Franja<select id="franja"><option>Mañana</option><option selected>Tarde</option><option>Me da igual</option></select></label>
+            <label class="campo">Motivo<select id="motivo"><option>Entre amigos</option><option>Despedida</option><option>Empresa</option><option>Cumpleaños</option><option>Entrenar</option></select></label>
+          </div>
+        </fieldset>
+        <ul class="requisitos" aria-label="Para subir al kart">
+          <li>Desde 15 años</li><li>1,50 m de altura</li><li>Hasta 120 kg</li><li>Casco incluido</li><li>Calzado cerrado</li>
+        </ul>
+      </form>
+      <aside class="hoja" aria-live="polite" aria-labelledby="t-hoja">
+        <div class="tira" aria-hidden="true"></div>
+        <h3 id="t-hoja">Tu carrera <span>Karting Villafranca</span></h3>
+        <dl>
+          <dt>Formato</dt><dd id="h-formato">Gran Premio</dd>
+          <dt>En pista</dt><dd id="h-min">24 min</dd>
+          <dt>Pilotos</dt><dd id="h-pilotos">8</dd>
+          <dt>Día</dt><dd id="h-dia">Por elegir</dd>
+          <dt>Motivo</dt><dd id="h-motivo">Entre amigos</dd>
+        </dl>
+        <div class="total"><span>Total orientativo</span><b id="h-total">344 €</b></div>
+        <p class="nota">Precio por piloto de su tarifa publicada. Hueco, señal y extras se confirman por WhatsApp.</p>
+        <a id="enviar" class="btn btn-azul" href="https://wa.me/34669095287"><svg class="ico"><use href="#i-wa"/></svg>Mandar al circuito</a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="circuito" id="circuito" aria-labelledby="t-circuito">
+  <div class="wrap circuito-grid">
+    <div class="revela">
+      <div class="cabeza" style="margin-bottom:1.6rem">
+        <h2 id="t-circuito">Doce curvas y una recta para pasar a alguien.</h2>
+        <p>Al aire libre, entre olivos. Más de 20 años abierto y sede anual del Campeonato Andaluz de Karting.</p>
+      </div>
+      <div class="datos">
+        <div><b>1.256<small> m</small></b><span>de trazado</span></div>
+        <div><b>12</b><span>curvas: 4 a izquierdas y 8 a derechas</span><div class="curvas" aria-hidden="true"><i></i><i></i><i></i><i></i><i class="d"></i><i class="d"></i><i class="d"></i><i class="d"></i><i class="d"></i><i class="d"></i><i class="d"></i><i class="d"></i></div></div>
+        <div><b>GT4</b><span>karts Sodikart</span></div>
+        <div><b>270<small> cc</small></b><span>motor Honda</span></div>
+      </div>
+    </div>
+    <div class="fotos revela">
+      <img class="f1" src="img/pianos.webp" width="1400" height="1050" loading="lazy" alt="Curva del circuito de Villafranca con los pianos azules y blancos y las barreras de neumáticos rojas y blancas">
+      <img class="f2" src="img/curva.webp" width="1400" height="1050" loading="lazy" alt="Vista del trazado de Villafranca con la recta y las curvas, olivar al fondo">
+      <div class="kartbox"><img src="img/kart.webp" width="295" height="255" loading="lazy" alt="Kart Sodikart de alquiler en rojo y blanco"><span>Sodikart GT4</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="grupos" id="grupos" aria-labelledby="t-grupos">
+  <div class="wrap grupos-grid">
+    <div class="revela">
+      <h2 id="t-grupos">¿Cuántos sois?</h2>
+      <p style="margin-top:1.2rem">Despedidas, empresas y cumpleaños: el circuito prepara paquetes para grupos y eventos privados. Diles cuántos sois y qué buscáis, y te lo montan con el formato que mejor encaje.</p>
+      <div class="acciones" style="margin-top:1.6rem">
+        <a class="btn" style="background:var(--asfalto);color:var(--cal)" href="https://wa.me/34669095287?text=Hola%2C%20somos%20un%20grupo%20y%20queremos%20correr%20en%20Villafranca."><svg class="ico"><use href="#i-wa"/></svg>Pedir paquete para grupo</a>
+      </div>
+    </div>
+    <div class="pizarra revela" role="img" aria-label="Pizarra de boxes: despedidas, Gran Premio con parrilla; empresas, evento privado; cumpleaños, desde 15 años; dudas, WhatsApp 669 095 287">
+      <ol>
+        <li>DESPEDIDA <span>GP con parrilla</span></li>
+        <li>EMPRESA <span>evento privado</span></li>
+        <li>CUMPLE <span>desde 15 años</span></li>
+        <li class="az">BOX <span>669 095 287</span></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="campeonatos" id="campeonatos" aria-labelledby="t-camp">
+  <div class="wrap">
+    <div class="cabeza revela">
+      <h2 id="t-camp">Aquí se corre en serio.</h2>
+      <p>La misma pista que alquilas es la del Campeonato de Andalucía. Y en casa organizan sus propias carreras de resistencia.</p>
+    </div>
+    <ol class="torre revela">
+      <li><span class="p">P1</span><div><h3>Campeonato de Andalucía de Karting</h3><p>Villafranca acogió la prueba inaugural de 2025, con unos 50 pilotos.</p></div><span class="dato">Sede<small>cada temporada</small></span></li>
+      <li><span class="p">P2</span><div><h3>VRS Endurance Cup</h3><p>3 horas de resistencia más 40 minutos de mini resistencia, equipos de 2 a 4 pilotos, categorías Gold, Silver y Bronze.</p></div><span class="dato">299 €<small>por equipo</small></span></li>
+      <li><span class="p">P3</span><div><h3>Grupo de WhatsApp de pilotos</h3><p>Para buscar compañero o rival y enterarse de las próximas carreras.</p></div><span class="dato"><a href="https://kartingcordoba.com/unete-al-grupo-de-whatsapp-de-pilotos.html">Unirse</a><small>gratis</small></span></li>
+    </ol>
+  </div>
+</section>
+
+<div class="piano" aria-hidden="true"></div>
+
+<section class="cierre" aria-labelledby="t-cierre">
+  <img class="silueta" src="img/trazado.svg" alt="" width="235" height="115" loading="lazy">
+  <div class="wrap revela">
+    <h2 id="t-cierre">La parrilla está pintada. <span class="az">Falta tu nombre.</span></h2>
+    <p>Monta tu carrera en un minuto y mándala. O llama, que en el circuito te lo cuentan.</p>
+    <div class="acciones">
+      <a class="btn btn-azul" href="#monta"><svg class="ico"><use href="#i-flag"/></svg>Monta tu carrera</a>
+      <a class="btn btn-linea" href="tel:+34957402350"><svg class="ico"><use href="#i-tel"/></svg>957 40 23 50</a>
+    </div>
+    <div class="donde">
+      <div><b>Dónde</b><a href="https://maps.google.com/?cid=6000605871675198907"><svg class="ico" style="vertical-align:-.2em;margin-right:.3rem"><use href="#i-pin"/></svg>CO-3103, km 1 · 14420 Villafranca de Córdoba</a></div>
+      <div><b>WhatsApp</b><a href="https://wa.me/34669095287">669 095 287</a></div>
+      <div><b>Correo</b><a href="mailto:info@kartingcordoba.com">info@kartingcordoba.com</a></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="pie-web">
+  <div class="wrap">
+    <img src="img/logo-villafranca-s.webp" width="360" height="133" alt="Karting Villafranca" loading="lazy">
+    <div class="casa" aria-label="Karting Córdoba también">
+      <a href="https://kartingcordoba.com/karting-indoor/inicio.html"><span class="pt"></span>Karting Indoor · Chinales</a>
+      <a href="https://kartingcordoba.com/escape-room-el-caso-vasiliev/inicio.html"><span class="pt cl"></span>Escape room · El Caso Vasiliev</a>
+      <a href="https://kartingcordoba.com/escape-room-la-tumba-olvidad-del-faraon-nekhet/inicio.html"><span class="pt cl"></span>Escape room · La Tumba del Faraón</a>
+    </div>
+    <span>Karting Indoor Córdoba S.L. · <a href="https://kartingcordoba.com/aviso-legal.html">Aviso legal</a> · <a href="https://kartingcordoba.com/politica-de-privacidad.html">Privacidad</a></span>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const TARIFAS = {
+    tanda: { n: 'Tanda', p: 18, min: '8 min' },
+    mini:  { n: 'Mini Gran Premio', p: 38, min: '16 min' },
+    gp:    { n: 'Gran Premio', p: 43, min: '24 min' },
+    super: { n: 'Súper Gran Premio', p: 49, min: '30 min' },
+    pase:  { n: 'Pase de pista, 1 día', p: 57, min: '10:00 a 18:00' }
+  };
+  const $ = (s) => document.querySelector(s);
+  const form = $('#form-carrera'), pil = $('#pilotos');
+  const eur = (n) => n.toLocaleString('es-ES') + ' €';
+  const fecha = (v) => v ? new Date(v + 'T12:00').toLocaleDateString('es-ES', { weekday: 'long', day: 'numeric', month: 'long' }) : 'Por elegir';
+  function pinta() {
+    const f = TARIFAS[form.formato.value];
+    const n = Math.min(40, Math.max(1, parseInt(pil.value, 10) || 1));
+    const total = f.p * n;
+    $('#h-formato').textContent = f.n; $('#h-min').textContent = f.min;
+    $('#h-pilotos').textContent = n; $('#h-dia').textContent = fecha($('#dia').value);
+    $('#h-motivo').textContent = $('#motivo').value; $('#h-total').textContent = eur(total);
+    const txt = `Hola, quiero montar una carrera en Karting Villafranca:\n· ${f.n} (${f.p} € por piloto)\n· ${n} pilotos\n· Día: ${fecha($('#dia').value)} · ${$('#franja').value}\n· Motivo: ${$('#motivo').value}\nTotal orientativo: ${eur(total)}. ¿Hay hueco?`;
+    $('#enviar').href = 'https://wa.me/34669095287?text=' + encodeURIComponent(txt);
+  }
+  form.addEventListener('input', pinta);
+  document.querySelectorAll('[data-paso]').forEach((b) => b.addEventListener('click', () => {
+    pil.value = Math.min(40, Math.max(1, (parseInt(pil.value, 10) || 1) + +b.dataset.paso)); pinta();
+  }));
+  document.querySelectorAll('.elegir').forEach((b) => b.addEventListener('click', () => {
+    form.querySelector(`input[value="${b.dataset.formato}"]`).checked = true; pinta();
+    $('#monta').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+  }));
+  const hoy = new Date(); $('#dia').min = hoy.toISOString().slice(0, 10);
+  pinta();
+
+  // la vuelta de reconocimiento: el kart da UNA vuelta y el marcador cuenta los metros (su cifra, 1.256)
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const svg = [...document.querySelectorAll('.portada .pista')].find((s) => s.getBoundingClientRect().width > 0);
+  if (!svg) return;
+  const linea = svg.querySelector('defs path'), kart = svg.querySelector('.kart'), metros = $('#metros');
+  const L = linea.getTotalLength(), DUR = 7200, TOTAL = 1256;
+  const suave = (t) => t < .5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+  let t0;
+  const paso = (ts) => {
+    t0 ??= ts;
+    const t = Math.min(1, (ts - t0) / DUR), p = suave(t);
+    const q = linea.getPointAtLength(p * L);
+    kart.setAttribute('transform', `translate(${q.x.toFixed(2)} ${q.y.toFixed(2)})`);
+    metros.textContent = Math.round(p * TOTAL).toLocaleString('es-ES');
+    if (t < 1) requestAnimationFrame(paso);
+  };
+  const arranca = () => { metros.textContent = '0'; requestAnimationFrame(paso); };
+  ('requestIdleCallback' in window) ? requestIdleCallback(arranca, { timeout: 1200 }) : setTimeout(arranca, 400);
+})();
+</script>
+</body>
+</html>
